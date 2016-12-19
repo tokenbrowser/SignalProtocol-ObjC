@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F3AAFAD1E07D9DF006654D2 /* SignalService.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F3AAF9F1E07D9DF006654D2 /* SignalService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D938C01E1D207BD700DCC13F /* SignalProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D938C01D1D207BD700DCC13F /* SignalProtocolTests.swift */; };
 		D9EEEDCC1D25E20500B8BC54 /* SignalStoreInMemoryStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EEEDCB1D25E20500B8BC54 /* SignalStoreInMemoryStorage.m */; };
 		D9EEEDD01D25F1E600B8BC54 /* SignalProtocolObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EEEDCF1D25F1E600B8BC54 /* SignalProtocolObjCTests.m */; };
@@ -17,6 +18,9 @@
 		2A26841D1B49F437109A651F /* Pods_SignalProtocolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignalProtocolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4074D8AA7B7FE8F25F5AE182 /* Pods-SignalProtocolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalProtocolTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignalProtocolTests/Pods-SignalProtocolTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81CEA9F41336C91F194A6BB9 /* Pods-SignalProtocolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalProtocolTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignalProtocolTests/Pods-SignalProtocolTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F3AAF9D1E07D9DF006654D2 /* SignalService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SignalService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F3AAF9F1E07D9DF006654D2 /* SignalService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignalService.h; sourceTree = "<group>"; };
+		9F3AAFA01E07D9DF006654D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D938C01B1D207BD700DCC13F /* SignalProtocolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignalProtocolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D938C01D1D207BD700DCC13F /* SignalProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalProtocolTests.swift; sourceTree = "<group>"; };
 		D938C01F1D207BD700DCC13F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,6 +31,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9F3AAF991E07D9DF006654D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D938C0181D207BD700DCC13F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,6 +55,15 @@
 				2A26841D1B49F437109A651F /* Pods_SignalProtocolTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F3AAF9E1E07D9DF006654D2 /* SignalService */ = {
+			isa = PBXGroup;
+			children = (
+				9F3AAF9F1E07D9DF006654D2 /* SignalService.h */,
+				9F3AAFA01E07D9DF006654D2 /* Info.plist */,
+			);
+			path = SignalService;
 			sourceTree = "<group>";
 		};
 		A8F8F8B2D353CF7BEFA80B8E /* Pods */ = {
@@ -72,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				D938C01C1D207BD700DCC13F /* SignalProtocolTests */,
+				9F3AAF9E1E07D9DF006654D2 /* SignalService */,
 				D9CC4AC11D1EF7B600C327E5 /* Products */,
 				A8F8F8B2D353CF7BEFA80B8E /* Pods */,
 				77DAD5FBA67DC95600CE07D2 /* Frameworks */,
@@ -82,13 +103,43 @@
 			isa = PBXGroup;
 			children = (
 				D938C01B1D207BD700DCC13F /* SignalProtocolTests.xctest */,
+				9F3AAF9D1E07D9DF006654D2 /* SignalService.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		9F3AAF9A1E07D9DF006654D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F3AAFAD1E07D9DF006654D2 /* SignalService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		9F3AAF9C1E07D9DF006654D2 /* SignalService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F3AAFB21E07D9DF006654D2 /* Build configuration list for PBXNativeTarget "SignalService" */;
+			buildPhases = (
+				9F3AAF981E07D9DF006654D2 /* Sources */,
+				9F3AAF991E07D9DF006654D2 /* Frameworks */,
+				9F3AAF9A1E07D9DF006654D2 /* Headers */,
+				9F3AAF9B1E07D9DF006654D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SignalService;
+			productName = SignalService;
+			productReference = 9F3AAF9D1E07D9DF006654D2 /* SignalService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D938C01A1D207BD700DCC13F /* SignalProtocolTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D938C0201D207BD700DCC13F /* Build configuration list for PBXNativeTarget "SignalProtocolTests" */;
@@ -118,6 +169,10 @@
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0800;
 				TargetAttributes = {
+					9F3AAF9C1E07D9DF006654D2 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
 					D938C01A1D207BD700DCC13F = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0800;
@@ -137,11 +192,19 @@
 			projectRoot = "";
 			targets = (
 				D938C01A1D207BD700DCC13F /* SignalProtocolTests */,
+				9F3AAF9C1E07D9DF006654D2 /* SignalService */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9F3AAF9B1E07D9DF006654D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D938C0191D207BD700DCC13F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -200,6 +263,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9F3AAF981E07D9DF006654D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D938C0171D207BD700DCC13F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -213,6 +283,92 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		9F3AAFAE1E07D9DF006654D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = SignalService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.SignalService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9F3AAFAF1E07D9DF006654D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = SignalService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.SignalService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D938C0211D207BD700DCC13F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4074D8AA7B7FE8F25F5AE182 /* Pods-SignalProtocolTests.debug.xcconfig */;
@@ -363,6 +519,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9F3AAFB21E07D9DF006654D2 /* Build configuration list for PBXNativeTarget "SignalService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F3AAFAE1E07D9DF006654D2 /* Debug */,
+				9F3AAFAF1E07D9DF006654D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D938C0201D207BD700DCC13F /* Build configuration list for PBXNativeTarget "SignalProtocolTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

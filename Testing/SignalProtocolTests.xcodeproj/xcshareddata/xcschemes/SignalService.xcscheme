@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0820"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -9,14 +9,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D938C01A1D207BD700DCC13F"
-               BuildableName = "SignalProtocolTests.xctest"
-               BlueprintName = "SignalProtocolTests"
+               BlueprintIdentifier = "9F3AAF9C1E07D9DF006654D2"
+               BuildableName = "SignalService.framework"
+               BlueprintName = "SignalService"
                ReferencedContainer = "container:SignalProtocolTests.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,13 +32,22 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D938C01A1D207BD700DCC13F"
-               BuildableName = "SignalProtocolTests.xctest"
-               BlueprintName = "SignalProtocolTests"
+               BlueprintIdentifier = "9F3AAFA41E07D9DF006654D2"
+               BuildableName = "SignalServiceTests.xctest"
+               BlueprintName = "SignalServiceTests"
                ReferencedContainer = "container:SignalProtocolTests.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9F3AAF9C1E07D9DF006654D2"
+            BuildableName = "SignalService.framework"
+            BlueprintName = "SignalService"
+            ReferencedContainer = "container:SignalProtocolTests.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -55,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D938C01A1D207BD700DCC13F"
-            BuildableName = "SignalProtocolTests.xctest"
-            BlueprintName = "SignalProtocolTests"
+            BlueprintIdentifier = "9F3AAF9C1E07D9DF006654D2"
+            BuildableName = "SignalService.framework"
+            BlueprintName = "SignalService"
             ReferencedContainer = "container:SignalProtocolTests.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -73,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D938C01A1D207BD700DCC13F"
-            BuildableName = "SignalProtocolTests.xctest"
-            BlueprintName = "SignalProtocolTests"
+            BlueprintIdentifier = "9F3AAF9C1E07D9DF006654D2"
+            BuildableName = "SignalService.framework"
+            BlueprintName = "SignalService"
             ReferencedContainer = "container:SignalProtocolTests.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
