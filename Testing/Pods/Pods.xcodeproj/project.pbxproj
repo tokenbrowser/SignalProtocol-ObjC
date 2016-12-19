@@ -1,0 +1,1463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		012CBFCB4825F4E0CAF6447A6711C4E6 /* zeroize.c in Sources */ = {isa = PBXBuildFile; fileRef = E3CA77D7F8F5E9A8730F2CC0210A483C /* zeroize.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		01C0224532AD512C0862D8F076103528 /* SignalPreKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 43CC76FAB646D756D9215D9D01DAAD77 /* SignalPreKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0274D86F8B960EC2D0ACE372EC700D60 /* SignalPreKeyBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAA757E2418A647B84F988C1E1B72BF /* SignalPreKeyBundle.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		02CDCC4E91BD50F1CB24CAC3CE2FDD49 /* fe_neg.c in Sources */ = {isa = PBXBuildFile; fileRef = 2712FC6118CF77D661E1B7C0ED7D50D5 /* fe_neg.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		059512A459344B4D31BA622D617CA4DC /* SignalProtocolC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A47C12474302F6EB8BE4CEE56F95A620 /* SignalProtocolC-dummy.m */; };
+		07A16B0B96A39B137C801FA72C735B84 /* session_builder.c in Sources */ = {isa = PBXBuildFile; fileRef = 53C1B5E39AB3E5634E35ED2939B524F2 /* session_builder.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		07DEB2A1189F71547D725C019C304299 /* SignalSessionCipher.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2194D06DBB1E39B8D8A691C7B3BD23 /* SignalSessionCipher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		087CBB3D36751A2012996F3C0A9B8A5B /* group_session_builder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C1B7650106A37509D7DC6D5E780328A /* group_session_builder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BDB36275D703B6A6330113258B270F9 /* SignalCiphertext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D380BEAE0C3156CD0DA6F1C2351FB42 /* SignalCiphertext.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0E8698AC7CE9E37E204FC584A5836A3D /* key_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = C6E14D6B912952753D0F7D1BAF00265F /* key_helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EF870C425B530679DD88B04F310BDEA /* SignalPreKeyBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 48379D1A2166B4DA625E6985F140F98E /* SignalPreKeyBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		107BFFF999672F2165F8983583C58358 /* SignalAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 4927A408B8FC6F22B95E2B53B838C636 /* SignalAddress.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		10FE2A82C49FB85B1DD057E6E6CAB956 /* ge_double_scalarmult.c in Sources */ = {isa = PBXBuildFile; fileRef = E50AE869F32C78A7E0ECB07BAD49E03C /* ge_double_scalarmult.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		11140774DBD3F9733F7762ACA8D9625D /* SignalSignedPreKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FC6C48CB0BF5AA83A66E205B4589A7 /* SignalSignedPreKey.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		119FE48BE2FE9C1110CA4F94369FC0CC /* SignalPreKeyMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E29B64AF204805A32C1FEB1FD76ED2AA /* SignalPreKeyMessage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		125156216A4D3F3125BCD5BA03476838 /* fingerprint.h in Headers */ = {isa = PBXBuildFile; fileRef = CCDE22769E86CF53A9C58CA69763181D /* fingerprint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1262A58869FC469BB0E8E75546D83B00 /* crypto_sign_edwards25519sha512batch.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FBD9AD8218FB1D2DA4978D5A686E671 /* crypto_sign_edwards25519sha512batch.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1445E1BCF08DC855CCD01AED6B0ED7CE /* SignalProtocolC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E9CB46BD6EACE949700EF1CBDD9B9A /* SignalProtocolC.framework */; };
+		1696A37E7637ABF23813F692C63DAB5B /* SignalMessage_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = D17CBF0248B3953B027FC186D0661B13 /* SignalMessage_Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		18765711C43E1D0375C2D90278163910 /* group_cipher.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E62470011653E797245ED7AEB75357D /* group_cipher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19140DD986667B3D8EC7FD34B822DF38 /* ge_msub.h in Headers */ = {isa = PBXBuildFile; fileRef = 1374B2CCE4074CB21C13C5C95CA4FB3E /* ge_msub.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1A8F8868C534A3C0BF267FDB4851AF10 /* SignalError.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F77C8268E523956911D40FD878A760B /* SignalError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1E191ECD24B2EF1EF9D33B3E5C6FCCEF /* ge_msub.c in Sources */ = {isa = PBXBuildFile; fileRef = 1345EF3145F31745DACCC7336D50DCB7 /* ge_msub.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1E85FBEE64423E210D73B740C067B788 /* sender_key_record.c in Sources */ = {isa = PBXBuildFile; fileRef = 8F9D2A981E7302521C9828469071217D /* sender_key_record.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		201CFB25E61A29DF9BEB045CD55E1753 /* SignalSignedPreKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 34FA18C729F9C02FEF2C9E71697BDFC7 /* SignalSignedPreKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20C341A2BB1678E8DB7C43632997CAD0 /* session_builder.h in Headers */ = {isa = PBXBuildFile; fileRef = 31976F74C910AB9BC1117AB8FD63EB19 /* session_builder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2162AA7502F546FA0AEB4A194274C42A /* curve.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B7B335308BB9880D738E129B7959FD1 /* curve.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22AF20F8E3409F197A68A4F412161FD0 /* signal_protocol.c in Sources */ = {isa = PBXBuildFile; fileRef = C0DBFBAEDA5C65E7B4B316A2651EBD20 /* signal_protocol.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		230CB314A704210846279BF995CC9291 /* session_pre_key.c in Sources */ = {isa = PBXBuildFile; fileRef = CEFE568D360D9596065ACA4A2519DA91 /* session_pre_key.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		27D0C3D27C89732DD7A1F3AFC602542E /* utlist.h in Headers */ = {isa = PBXBuildFile; fileRef = 33ECD021C877B2CED8679105DBAD8208 /* utlist.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		28A76F64F9EFF81E9A71364029BC681C /* zeroize.h in Headers */ = {isa = PBXBuildFile; fileRef = C05145D4E69C51ADA231A808D26990F6 /* zeroize.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		28FCDAFD8F86BC06F57B60F2442F46BA /* fe_pow22523.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EFCEA44C2F6C19E148F86EE6E9C38A7 /* fe_pow22523.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		29312800CBD7D967D7F54B08A8FE5D7D /* ge_p3_dbl.c in Sources */ = {isa = PBXBuildFile; fileRef = CC369907E7D1BD020BDED2CB44C789C7 /* ge_p3_dbl.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2966896865AFCE6C2AEC7146FB112F43 /* session_state.c in Sources */ = {isa = PBXBuildFile; fileRef = 471842287F946D30F7D65DD5F4E2F318 /* session_state.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2DE2464ABDF0974AE12217BE729D737B /* SignalKeyHelper_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FB1E91033C04266CE23129F5AEC6112 /* SignalKeyHelper_Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2F2047B0AB7CF79CD6903DB1693FB7C9 /* fe_sq.c in Sources */ = {isa = PBXBuildFile; fileRef = 69F14C553547006AB849B664C369ED10 /* fe_sq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		30F0A8596EDDA9952B0C62FACDA45F7F /* SignalCommonCryptoProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A670B8A22F87EE1480F6927F7826EA7D /* SignalCommonCryptoProvider.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3274394FED3C41CC66CF84533B01FEB6 /* session_builder_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A4EE1E0CB7B031410A6D1627C6C185 /* session_builder_internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		34D2CD3AD30E2A8A767D13D74D920B2E /* ge_p3_to_cached.c in Sources */ = {isa = PBXBuildFile; fileRef = 277EB084E6F50DCFB984D9439A2D3486 /* ge_p3_to_cached.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		35832AC127B835520F2C07BA12F80893 /* SignalKeyPair_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5397CB74CE1701227122941F99757871 /* SignalKeyPair_Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		35BDF180EBC8BC121F7D46FDA60543D0 /* ge_p3_0.c in Sources */ = {isa = PBXBuildFile; fileRef = 0BC6DA53E979452FD4960B6216800D98 /* ge_p3_0.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		35C991F30E7EEFA7B57F7065C17803FA /* protocol.c in Sources */ = {isa = PBXBuildFile; fileRef = C79A7853C12DF899201F0C045F1AFF0A /* protocol.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3617E391051543903EDF1B132260CEC4 /* curve25519-donna.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B31835CF7A022B019B4BEF65802A062 /* curve25519-donna.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3776612AF22EDEDBDBCE712D7F3083AC /* crypto_sign.h in Headers */ = {isa = PBXBuildFile; fileRef = 30989EB9501EFFEFF5E682707F2630D7 /* crypto_sign.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		37A1F08069C79F7A8F436DC37BF13F76 /* fe_sub.c in Sources */ = {isa = PBXBuildFile; fileRef = 17AD1A6F44E76E969CD09FBC2037A121 /* fe_sub.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		37F35B9C5D2795E4A1480FAFEEA1B8DA /* SignalProtocolC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 222677DDC66572E0A84E74364340B9C5 /* SignalProtocolC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		395E4F3202F0A0ED6F4752C44D9EF3CC /* ge_frombytes.c in Sources */ = {isa = PBXBuildFile; fileRef = 7E39A89B9CA7E5F0E56B9D3EDE1C9C32 /* ge_frombytes.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		39747BB2FFA3430AAF49A5FA655C7C44 /* base.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FC7ED11B4E9DF1D3A1F24ED4272E7E /* base.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3AC878C069BFEF9322C1E334CFA2A710 /* FingerprintProtocol.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = F0FFBC803E02128969E4B1F1B1DE5D4E /* FingerprintProtocol.pb-c.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3D15CD4E4504B55E7702671E6ED4F5D6 /* signal_protocol_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CB3C57F10A4207FEABB78B48191E658 /* signal_protocol_internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3E947E3A85C44DEF1631393907989FFC /* sc_reduce.c in Sources */ = {isa = PBXBuildFile; fileRef = F36FFDE7C4814B25228789109EAFDFE1 /* sc_reduce.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3F9DBE9D33409E92A66C0E82CDEF6C80 /* SignalSenderKeyStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D4B7AB62C18830D23F9D879E8A879D5 /* SignalSenderKeyStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4160C4101449DA0FA23E886574988127 /* SignalAddress_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 41F1D01CD885DC9AB7F86FC6F7851C21 /* SignalAddress_Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		43B7CB4FA121AF32C5A281A332575D4E /* curve_sigs.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F691878661A7E22E3D812A20F327BEC /* curve_sigs.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		44B824F2FAED5543D6169A6121BA50C2 /* d2.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CBB001ECB8B0C8A77EE6A347CFADF50 /* d2.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4528B8D52BFE5022901C2326FEA010BC /* pow225521.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F011BB7AAEE4979BA6FE4698EE4993D /* pow225521.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		45410374FD10D96944E96C811833B102 /* sc_muladd.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F7658C9C4D127BEA6B57F4C30EAE8F2 /* sc_muladd.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		456964E18527EC9757D95740C5E3D562 /* sender_key_state.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8DE51EC52EC620EC390E425A0A8AD9 /* sender_key_state.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		458B25677B075D91EE2C9EB11C859080 /* hkdf.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FAFD47CAED2009BC1B28B217D043AF5 /* hkdf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49D9AD19755CC7853071EF916374C326 /* uthash.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AFD36EBE341B5C33D6310F74F3D9AA4 /* uthash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4A1EE7CC83A3EF36B75AF9CDAA336904 /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EE828D3140581ACDD6A6767773AC925 /* hash.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4BD6794F5805DFF4AD01E474B325A865 /* open.c in Sources */ = {isa = PBXBuildFile; fileRef = 2FD81BE84EF700C3D93BF94C5EDE15F0 /* open.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4C4692C090A2F4CBB1171B2B58022724 /* fe_copy.c in Sources */ = {isa = PBXBuildFile; fileRef = 5671DE4BE4352A50AB5F148E563E4904 /* fe_copy.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4C95C11B3E62E75A3CD274375F4E6B51 /* SignalIdentityKeyPair.h in Headers */ = {isa = PBXBuildFile; fileRef = 567FD772A87994B6E758D78C5B8576C9 /* SignalIdentityKeyPair.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D42E0C44AECF791752278990E527BC6 /* ge_p3_tobytes.c in Sources */ = {isa = PBXBuildFile; fileRef = 493E56785968CC7327FB7813085A5AD1 /* ge_p3_tobytes.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4E0553FB9D863D5E85BE7845D9ECB8B3 /* ge_tobytes.c in Sources */ = {isa = PBXBuildFile; fileRef = 32662722FCFAC68081185974F695A6FE /* ge_tobytes.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4EAA47238F7C4F332C2593CA96C8A0B1 /* session_record.c in Sources */ = {isa = PBXBuildFile; fileRef = 175C5AD84A36E5ECE8B7D4F1CB2E03F4 /* session_record.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		51CE573D1BA4E236720FDEBEE1AC6A6A /* SignalSignedPreKey_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E8805537135CA2CDEF31A4C0A2236E /* SignalSignedPreKey_Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		54DD0F1069EEE9652D37A3934F8D0675 /* SignalKeyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F02530AFD8C10CDBEFE2F812D9078DA3 /* SignalKeyHelper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		567A2EEBACB801B225FFBC4EA7F4E710 /* session_cipher.h in Headers */ = {isa = PBXBuildFile; fileRef = A1CA3A7AEE41C14CA5691CEAAE6E7A34 /* session_cipher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56CDAA9D01D40A344F2FF6DE64E6A27B /* ge_p1p1_to_p3.c in Sources */ = {isa = PBXBuildFile; fileRef = 8327CCE6D5E2BC472C96D6387BDF0F73 /* ge_p1p1_to_p3.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		571CABD2B21D26416EEE254C9889C80A /* SignalPreKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A306DD1FF3605440985F96CFA4FB60C /* SignalPreKey.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		58919AC219767EDC7FA1DCEB8E149EE2 /* Pods-SignalProtocolTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D38FAABE4B876403EC497E68593BCF1A /* Pods-SignalProtocolTests-dummy.m */; };
+		5A2EE266CF8CD4150EBC5872522A20AD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5543A137BACF5630C73005FA7DB8A2FC /* Cocoa.framework */; };
+		5B3975903910334E2D115F7C3321B606 /* curve.c in Sources */ = {isa = PBXBuildFile; fileRef = 9258F11AB6207E71112031CB1314D478 /* curve.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5B51D6128AECCE4F55E8AE29DD49E33B /* SignalSignedPreKeyStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FC90ECCF75E680FDC247B061D66BCD3 /* SignalSignedPreKeyStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C629770EB41C0C8CF5092EC64A2B400 /* SignalPreKeyStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 05AA7489AB29F43740444321D3F4029D /* SignalPreKeyStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E0D82B5133FDB5B00AF6F93FC5C800B /* SignalKeyPair.h in Headers */ = {isa = PBXBuildFile; fileRef = 45645E63DAB20512AB38201BDACD21FB /* SignalKeyPair.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EA9BFDBB4A7E04E05429A00DEA174AA /* ge_p3_to_p2.c in Sources */ = {isa = PBXBuildFile; fileRef = 16AA4AE8C45E40779C7F04303E44D7A5 /* ge_p3_to_p2.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		635EDF8A7B43F5E03C1495905486992A /* ge_p2_0.c in Sources */ = {isa = PBXBuildFile; fileRef = 3B89D5F433FDD82B5BD85E5151EC4C20 /* ge_p2_0.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		64802C6FADA3B83ECA25507E19DEC4CE /* FingerprintProtocol.pb-c.h in Headers */ = {isa = PBXBuildFile; fileRef = DE903709F3582CCC4057998980C1BA25 /* FingerprintProtocol.pb-c.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		68A62AA2AF7FA6848FBA01B5B32DC877 /* WhisperTextProtocol.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = E00105FA64B5608F8E3062FA4F6D456A /* WhisperTextProtocol.pb-c.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		69916F4AA3778FCF0FC7D846021D824A /* fe.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C5487225A0981A0FB22041B0A04448 /* fe.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6E07526B990C8D982A27E324EBF4C03C /* session_pre_key.h in Headers */ = {isa = PBXBuildFile; fileRef = 672D0019BC8E01EC876C93FC339B2F29 /* session_pre_key.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EC4F7B193A952A3ED3176BACA97E7C7 /* session_cipher.c in Sources */ = {isa = PBXBuildFile; fileRef = 81AC54B529E5C2D332BC08062D235860 /* session_cipher.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		71348197D10EE13B25A0D92F2096C307 /* ge.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE96E1AD527FE22122D43E6DD0731AE /* ge.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		71A795C973B434BF0F84F5F5972FBAF2 /* SignalStorage_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = FDB3DB6B8D1FDC4461A9E2A265DAC7C8 /* SignalStorage_Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		72F0F8814E9492518AA1AC973FE26A1E /* SignalMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E62C45FDDC0A05E4BF02D1415D8A7B7 /* SignalMessage.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7488F307CBB8CD01055D04C692A5A2A1 /* ge_add.c in Sources */ = {isa = PBXBuildFile; fileRef = 9503333A733700B6DF51B9608C9DE5CE /* ge_add.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		75530F9806FF1AD14108A4531067EC35 /* LocalStorageProtocol.pb-c.h in Headers */ = {isa = PBXBuildFile; fileRef = A202B3D25A7C6AAFC942BFC8B65CA8E9 /* LocalStorageProtocol.pb-c.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7A3964B1952C1A08CCCDF7DFE5A0C63A /* SignalContext.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE751B8EADB3F39B1DE0DD45CAFB68A /* SignalContext.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7A92F8732503037E685B648B185767AB /* SignalSessionCipher.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D5FAB7ACCCFFD4B78C0F67B9D50661A /* SignalSessionCipher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C7A8A1DF57F3894D3BC8FE27EF1069C /* crypto_hash_sha512.h in Headers */ = {isa = PBXBuildFile; fileRef = C771945C236BFEFA6D27B6FE3105183C /* crypto_hash_sha512.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		80A8222D16423B2A28D70C7E35927602 /* curve25519-donna.c in Sources */ = {isa = PBXBuildFile; fileRef = 703116C3BF57F613B7B1EEB492426CD0 /* curve25519-donna.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8107DF7983A4080F3F24BBB7E4D8F865 /* hkdf.c in Sources */ = {isa = PBXBuildFile; fileRef = 30C287D84FF24EA2AB3FED205C3C7148 /* hkdf.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		82517EF419C0EF64789E06ADCB06913B /* crypto_verify_32.h in Headers */ = {isa = PBXBuildFile; fileRef = 704FBE7B32AE7257F381D30E49ADF8EC /* crypto_verify_32.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		832FCAC455B2708606849FFDD9CAA74A /* SignalIdentityKeyPair_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B71316C3250DF2ECB6B9E2EFA86D7F1F /* SignalIdentityKeyPair_Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		83667D7C1279AB7D268B316004AECDE5 /* compare.h in Headers */ = {isa = PBXBuildFile; fileRef = BF0FAEEC29E9A91D37DC11D9E0B0778D /* compare.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		83A5806E01194C4AD7C394D2B767B31E /* SignalSessionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B0213530FCCD59805C2D6BAE1D3EEB14 /* SignalSessionBuilder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		864870C79BC2096FF93BD1FD78D1DD36 /* fe_add.c in Sources */ = {isa = PBXBuildFile; fileRef = 1EF787C0ED57A2F8338CE2B892009A4B /* fe_add.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		86AF852F4CD42187913B2505BFBED99E /* crypto_uint32.h in Headers */ = {isa = PBXBuildFile; fileRef = 839905BB6847006D6CD9791E995BD861 /* crypto_uint32.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		894FB9CC3232A3BFB1403F41F4129A94 /* SignalSessionStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DFFF52A5DA02949364717CAC5629A3A /* SignalSessionStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A05C807D9A0946CAB91CB891A028FD2 /* blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = 448E9A2E96D4927B504559878335D5B8 /* blocks.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8BC7335DF4EE623F2A175B04DF1CB673 /* fe_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = 93A41DD4F6B72E1246D5125495309AF9 /* fe_mul.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8C52DBEC316F90D21096F75FCABF7D2F /* ge_madd.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D7F5D00A34FA2B3B2562A2DD712936 /* ge_madd.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8E0BFFB713AF847A433D32E0A1E38AA6 /* fe_isnonzero.c in Sources */ = {isa = PBXBuildFile; fileRef = C957F913094EF8BBCCBF56927796C1A5 /* fe_isnonzero.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8F9E6E1DDA24C1DA3FCC712AE6405487 /* SignalProtocol-ObjC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A61B659766A48ADD6FA093DCC29E5389 /* SignalProtocol-ObjC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9119DBDC3A99A930EF7CAF4E7D9B4C86 /* group_cipher.c in Sources */ = {isa = PBXBuildFile; fileRef = 80C524B755DF769972F67C89CF75541E /* group_cipher.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		93C0B32A4509D8685EA15E8A50F99F13 /* group_session_builder.c in Sources */ = {isa = PBXBuildFile; fileRef = 22301F7D03818D3759446F8AD5045E34 /* group_session_builder.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		949C608EFC7AB41819A3AC9E73B1B49D /* SignalContext_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F160B858863EF793133C49C0BCA7CE2 /* SignalContext_Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		98106FB908232C3BBE67245178EAEDA7 /* sender_key_record.h in Headers */ = {isa = PBXBuildFile; fileRef = 07EC2DA90C6781DBF8B4747B4A6596E4 /* sender_key_record.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98EF22D7E9EA4BEE7669F0EB79F1C349 /* fe_isnegative.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B5CA06D1D99AF0807487ED937A19982 /* fe_isnegative.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9B442E9AB5681A3B48B9EE2490868154 /* SignalIdentityKeyStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E69BDEEFF6079BBF29F575C385589C /* SignalIdentityKeyStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CE8ADA5F78C7A22C6501EC2BD2F6E12 /* SignalPreKeyBundle_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9269D2B2A9DB33BDEEE32486B6468F75 /* SignalPreKeyBundle_Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9D8D5F2EF3D15303619B3F621D225451 /* ge_scalarmult_base.c in Sources */ = {isa = PBXBuildFile; fileRef = 0CEE4F72AEB92B36608B5821F2C96F21 /* ge_scalarmult_base.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9E89F22851CCF5820D38E33B8EC3A9BA /* crypto_int32.h in Headers */ = {isa = PBXBuildFile; fileRef = FF350456C5E96CD11486B86208815E57 /* crypto_int32.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9F4B3F2CCAA5B63271076DDC0D214392 /* SignalIdentityKeyPair.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7A361F7DBB6A1A338A7C24BBC20550 /* SignalIdentityKeyPair.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9F93BD02A1C3B2A899F53C4663DD5269 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5543A137BACF5630C73005FA7DB8A2FC /* Cocoa.framework */; };
+		9FB44AB1CA7F5DFE78DBE26F79BB8223 /* protobuf-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EF592A298BCB0A1BB2303CFB7C83550 /* protobuf-c.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A4432DF3AEB4942DA1CA156B355C9A63 /* utstring.h in Headers */ = {isa = PBXBuildFile; fileRef = AF3FCE7C5F1F2DD535988BFD3BF03DAD /* utstring.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A4C08FFB1E4C5F1AC7FC39B1EE371703 /* pow22523.h in Headers */ = {isa = PBXBuildFile; fileRef = CF11C69E2FC61F7B04EF6454DE9AD27B /* pow22523.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A7AE8ED3C667834242A71C4E77A4BC65 /* fe_tobytes.c in Sources */ = {isa = PBXBuildFile; fileRef = 2BE807EE2570C41C4EFEF1C1A7686AC2 /* fe_tobytes.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A7E0E2140334EDC7DEF7C45E78E521BA /* sqrtm1.h in Headers */ = {isa = PBXBuildFile; fileRef = F26816329758A1C45301956A80E412C5 /* sqrtm1.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A8B8511B4805E3D5B3CC6FEC07124AED /* sender_key.h in Headers */ = {isa = PBXBuildFile; fileRef = C7B19244F1BD51E46F089DEFBAA8147D /* sender_key.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A92C519CBCDB7B2726DFD26A5E17AA8C /* SignalKeyPair.m in Sources */ = {isa = PBXBuildFile; fileRef = A5738B7574EC1D8D000918DB6411A4AC /* SignalKeyPair.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AB2AF7C012C735629A8A81F3D41002D6 /* fe_0.c in Sources */ = {isa = PBXBuildFile; fileRef = D7E3516AD25BDF770DBE2239A1A79A79 /* fe_0.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ABBB23A99647DDC73E1AC737BE50AB09 /* signal_protocol_types.h in Headers */ = {isa = PBXBuildFile; fileRef = A6D4F8BA95484D0EECD096817240E6EF /* signal_protocol_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD2C1D9F26DFFEB40BD880A6D9DE145F /* SignalAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = C13E5F78ADFEC970B6921E2AF99473AF /* SignalAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD3CEB902BC87692D1AE97C942E60CD3 /* fingerprint.c in Sources */ = {isa = PBXBuildFile; fileRef = A5BD7C8244420BA269574D7EB755719F /* fingerprint.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AD893AABD46A9AAFE86E9FECEF596F45 /* ratchet.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D95F98128E92D5086A574A43F0ED2AD /* ratchet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF80315BF1EF5D9C65FC73992679915B /* signal_protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AAE8FA6B3118F35E3F8435374DF49B /* signal_protocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4AB4F3304C58997FC4BB396EF6E53D3 /* SignalPreKeyMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4620D289CE28B2610DD5E9D645322834 /* SignalPreKeyMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5286FEB6457587816D7CA8D7288FB89 /* SignalPreKey_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 45404983514B47239B3CE8680EDFD609 /* SignalPreKey_Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B672F8C23A7C49E2B9C47731C0E02DDA /* fe_sq2.c in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E7E6DA9336CA64F8A0F279EE2A22E /* fe_sq2.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B675BD3FD9A8EFCEAC8D1359C4A6CC60 /* session_record.h in Headers */ = {isa = PBXBuildFile; fileRef = D55BA4A873C153F2B9E884270001F37A /* session_record.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9E59F840673C0822749D22824FD2013 /* ge_precomp_0.c in Sources */ = {isa = PBXBuildFile; fileRef = 79BB2CAEBC61156F7B4E92FA0A0ECF4B /* ge_precomp_0.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B9EB2CB41D6449D554DF5091650BC2C0 /* sign_modified.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FA3C4FB9C47D3EF60D4F48130E6096D /* sign_modified.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BB97FB0D04475B6AA28AA88C44B3D3FE /* fe_invert.c in Sources */ = {isa = PBXBuildFile; fileRef = 214876E7554EBB66473C7D063563ECF0 /* fe_invert.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C0896CD75D6931DA8E6C4468637F5D82 /* ge_p2_dbl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A7DB52BF6AF4D54DD9CDE1766270A46 /* ge_p2_dbl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C4C362C1B87CAFD3F46314F2885A1FF2 /* SignalCiphertext.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DFD6CF4054F9D3E76C7B4D7F09DD0B /* SignalCiphertext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C53E4F791C1CB97D7F61DF7FD2E21B8B /* vpool.c in Sources */ = {isa = PBXBuildFile; fileRef = AC30632D87FEBA99B559A34B5E7F53CA /* vpool.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C833EF7BDDAF6FB345FBF07A939C7437 /* sc.h in Headers */ = {isa = PBXBuildFile; fileRef = 48BECCF19321D53EA1FF78E106FD0FD3 /* sc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C8E3090E1AE692BCD2F97A862FB66487 /* crypto_uint64.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CC7E5C0EFCC632C4E8D67708B112A38 /* crypto_uint64.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C9217212ADB385F8F141574174F694B5 /* session_state.h in Headers */ = {isa = PBXBuildFile; fileRef = A1EE3B229AF21848EE3E3FF0246AF260 /* session_state.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C92D8E4E73BECB4622209DA61D2296F0 /* SignalSessionBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7900867763D81AE6FF1DAFC1578F408D /* SignalSessionBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC1746D22AD6159BFC95DB5802A11505 /* sign.c in Sources */ = {isa = PBXBuildFile; fileRef = C0C71F2087BB75F4B86105DC776904D1 /* sign.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CF8462DBF878BE4FC5D4C52E7FEB5057 /* vpool.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D5C548B6EED0E38E20C4B29E248FE2 /* vpool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CF88F2B64CEA89F7DA0586E9D4EE9097 /* ge_sub.c in Sources */ = {isa = PBXBuildFile; fileRef = CB7948514F9A14CF23FD2CAB89CF7650 /* ge_sub.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D514B0461E96D853E6EBBAFCA4282BCC /* LocalStorageProtocol.pb-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CCCC4BA074D0D544F959D33C54FF0C0 /* LocalStorageProtocol.pb-c.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D51FAC4A4BA33FC5366B57FE512C7DDB /* WhisperTextProtocol.pb-c.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F922A6E694A1524EBE3FB646F0C39D6 /* WhisperTextProtocol.pb-c.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D5875C1FF2AA9F64A865593855426C1D /* ge_p1p1_to_p2.c in Sources */ = {isa = PBXBuildFile; fileRef = FAD7C8E03E27318FC9BDB447BA79D339 /* ge_p1p1_to_p2.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D5DABA846093E17C32BA2F96863320F1 /* SignalProtocol-ObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 743DB4B38D8EBD406D8B04247F9DA55D /* SignalProtocol-ObjC-dummy.m */; };
+		D695F6577FBB67A90C0F54F0FC4211AF /* ge_madd.c in Sources */ = {isa = PBXBuildFile; fileRef = C1AB2C566460057DD245A8C63793B2D8 /* ge_madd.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D9F5035AFA3E39AB90B9132986F90760 /* Pods-SignalProtocolTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5ABF7254F3189A2B5EF7359E295412E /* Pods-SignalProtocolTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC0C3F9C507D703D25213796238E86BD /* ratchet.c in Sources */ = {isa = PBXBuildFile; fileRef = D07A69A46F171C0B001FB7F907E7BA15 /* ratchet.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DC14959C8077052CDA85B41818CA5F5C /* compare.c in Sources */ = {isa = PBXBuildFile; fileRef = 16DC5B52BA392B4C46BEB4930FB02064 /* compare.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E0017096BB4F4F8B2981594D68F7B748 /* SignalStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D34F6ACDA2A2A0DA430476CFB40AC01 /* SignalStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E089D07F0CAB4D0206F1ACA14EF32552 /* d.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C54BD98C4BD267DF4364C552E2B6129 /* d.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E194EFFD46EC0406A94C57FA81808DBA /* SignalKeyHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 750FC2E837DB689C1C10C5CBC6A82366 /* SignalKeyHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E40F812FDC8D2C1F9D6890A97B70A7B6 /* ge_sub.h in Headers */ = {isa = PBXBuildFile; fileRef = F1C38BFD64564D609C4C805FB82E17F2 /* ge_sub.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E45FD2DEA73157807B6D90967C50A072 /* base2.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A32DF8BA66E36E42C2F3B52F05D5A5D /* base2.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E6218B54CB5BA2DB1820AC4D3AE68A1F /* sender_key.c in Sources */ = {isa = PBXBuildFile; fileRef = 1130EDF06BBE8C3A68E82FE5984F4899 /* sender_key.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ED195C0447A32D39FAA6DD32D1B5FD85 /* ge_p2_dbl.c in Sources */ = {isa = PBXBuildFile; fileRef = F984FE99607877B5728C077D398229D7 /* ge_p2_dbl.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ED4248DAE03026B2C453709F61EA0155 /* crypto_int64.h in Headers */ = {isa = PBXBuildFile; fileRef = 57B55B6BE12D0AD8066D2F124FFFFB5B /* crypto_int64.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ED5D675AAB632B7FBD36F689A476C379 /* fe_1.c in Sources */ = {isa = PBXBuildFile; fileRef = C5C9AA62E9C09DF8C078E5C5BAEA889C /* fe_1.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EE450B433F3981A489F84C4BC326A1F8 /* SignalMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 576CFAC36A4CF726D5C34A762C5D9A2E /* SignalMessage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EE5F6270C3B8881A15A0538F19A18079 /* SignalCommonCryptoProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 955017C54E799260E5F906A1C057FE21 /* SignalCommonCryptoProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF97739D8F7575285A2E3FBDD8E42964 /* protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D3EA2D7F4B1C0B2C7D65BACC152D8B56 /* protocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF99CE2EB0CEA4ED9D02ECDD2191A8CC /* SignalSerializable.h in Headers */ = {isa = PBXBuildFile; fileRef = 45B0F4E91AD97D2B34CB1A7E63ED3AAF /* SignalSerializable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1A6000AB39A678D930ED1C81A61016B /* sender_key_state.c in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFAE2B576E353FCFC76A4F513B5FFC /* sender_key_state.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F3AA86468923CAA7E95A8C98618F3D71 /* SignalContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 075F627F56BB07ED6D5B99EE65064B6F /* SignalContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3C5308C5B7AF4B9544A5F3F14E37258 /* utarray.h in Headers */ = {isa = PBXBuildFile; fileRef = 62176C9653145F77520A119BF7120A35 /* utarray.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F3E2CDA6B9BA515912B96EB5C4D1CC44 /* curve_sigs.h in Headers */ = {isa = PBXBuildFile; fileRef = 931DCAD58B6D4B4BE640444B3FAE37F1 /* curve_sigs.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F48DCC3BC946B121FB8CF6E7688593D2 /* key_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = 0983DF6F139837522E71FD32FB8376BB /* key_helper.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F4C19D506A15A0614CE75E98D8D94530 /* protobuf-c.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86F3CF74108970040E07C05BD9E461 /* protobuf-c.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FB9D7A5AB4A7B4940A738AD74328F8AF /* SignalPreKeyMessage_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 86B957D7C080A300BE85B4E8CEA083F2 /* SignalPreKeyMessage_Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		FC3912E97EB0272385E983B10E5638AC /* fe_cmov.c in Sources */ = {isa = PBXBuildFile; fileRef = AB4BEA322239BA0C002D94412938183C /* fe_cmov.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FCC724154C151F4E6E2A485417EFCAF3 /* fe_frombytes.c in Sources */ = {isa = PBXBuildFile; fileRef = C1970FF39E9B9603CC15A3E96912D40A /* fe_frombytes.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FCE41AC42A75D4B4FDE4A5B2F288D003 /* SignalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9D2936051F244CC9F9B600044CA923 /* SignalStorage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FD8356AC6B6CE958E9FB1A02FE97FBC2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5543A137BACF5630C73005FA7DB8A2FC /* Cocoa.framework */; };
+		FE1B805A6963DE73062F78F447900D16 /* ge_add.h in Headers */ = {isa = PBXBuildFile; fileRef = 60A048AECCC8FBF24D8AE968701C83C4 /* ge_add.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FE72C3AE1EAE1170C987E2E45C8ADE3A /* SignalError.h in Headers */ = {isa = PBXBuildFile; fileRef = FFEDCED44E1B4A8E90349E3D123F0FC6 /* SignalError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2728D247DD8D0170865F971C0B0610CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A3AE5AB1E60D763741B78E47B130EA5;
+			remoteInfo = "SignalProtocol-ObjC";
+		};
+		4D1DB9AA6F744293067F5857742A1487 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0051DCDFAB2AD278BA3C3E7586F92E6D;
+			remoteInfo = SignalProtocolC;
+		};
+		8443EB259807DA3ABE116F93D3D10C86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0051DCDFAB2AD278BA3C3E7586F92E6D;
+			remoteInfo = SignalProtocolC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03439739307B064C4F64D34E50C63F09 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049703333012273DC71244379D7CBB20 /* Pods_SignalProtocolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SignalProtocolTests.framework; path = "Pods-SignalProtocolTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05AA7489AB29F43740444321D3F4029D /* SignalPreKeyStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalPreKeyStore.h; sourceTree = "<group>"; };
+		075F627F56BB07ED6D5B99EE65064B6F /* SignalContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalContext.h; sourceTree = "<group>"; };
+		07EC2DA90C6781DBF8B4747B4A6596E4 /* sender_key_record.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sender_key_record.h; path = src/sender_key_record.h; sourceTree = "<group>"; };
+		0983DF6F139837522E71FD32FB8376BB /* key_helper.c */ = {isa = PBXFileReference; includeInIndex = 1; name = key_helper.c; path = src/key_helper.c; sourceTree = "<group>"; };
+		0A7DB52BF6AF4D54DD9CDE1766270A46 /* ge_p2_dbl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ge_p2_dbl.h; path = src/curve25519/ed25519/ge_p2_dbl.h; sourceTree = "<group>"; };
+		0BC6DA53E979452FD4960B6216800D98 /* ge_p3_0.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_p3_0.c; path = src/curve25519/ed25519/ge_p3_0.c; sourceTree = "<group>"; };
+		0CEE4F72AEB92B36608B5821F2C96F21 /* ge_scalarmult_base.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_scalarmult_base.c; path = src/curve25519/ed25519/ge_scalarmult_base.c; sourceTree = "<group>"; };
+		0DFFF52A5DA02949364717CAC5629A3A /* SignalSessionStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalSessionStore.h; sourceTree = "<group>"; };
+		0EE828D3140581ACDD6A6767773AC925 /* hash.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hash.c; path = src/curve25519/ed25519/nacl_sha512/hash.c; sourceTree = "<group>"; };
+		0EF592A298BCB0A1BB2303CFB7C83550 /* protobuf-c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "protobuf-c.h"; path = "src/protobuf-c/protobuf-c.h"; sourceTree = "<group>"; };
+		1130EDF06BBE8C3A68E82FE5984F4899 /* sender_key.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sender_key.c; path = src/sender_key.c; sourceTree = "<group>"; };
+		1345EF3145F31745DACCC7336D50DCB7 /* ge_msub.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_msub.c; path = src/curve25519/ed25519/ge_msub.c; sourceTree = "<group>"; };
+		1374B2CCE4074CB21C13C5C95CA4FB3E /* ge_msub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ge_msub.h; path = src/curve25519/ed25519/ge_msub.h; sourceTree = "<group>"; };
+		16AA4AE8C45E40779C7F04303E44D7A5 /* ge_p3_to_p2.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_p3_to_p2.c; path = src/curve25519/ed25519/ge_p3_to_p2.c; sourceTree = "<group>"; };
+		16DC5B52BA392B4C46BEB4930FB02064 /* compare.c */ = {isa = PBXFileReference; includeInIndex = 1; name = compare.c; path = src/curve25519/ed25519/additions/compare.c; sourceTree = "<group>"; };
+		175C5AD84A36E5ECE8B7D4F1CB2E03F4 /* session_record.c */ = {isa = PBXFileReference; includeInIndex = 1; name = session_record.c; path = src/session_record.c; sourceTree = "<group>"; };
+		17AD1A6F44E76E969CD09FBC2037A121 /* fe_sub.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_sub.c; path = src/curve25519/ed25519/fe_sub.c; sourceTree = "<group>"; };
+		1C1B7650106A37509D7DC6D5E780328A /* group_session_builder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = group_session_builder.h; path = src/group_session_builder.h; sourceTree = "<group>"; };
+		1D380BEAE0C3156CD0DA6F1C2351FB42 /* SignalCiphertext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SignalCiphertext.m; sourceTree = "<group>"; };
+		1D8856006AAE1F26068CB56074B35DC6 /* Pods-SignalProtocolTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SignalProtocolTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1EF787C0ED57A2F8338CE2B892009A4B /* fe_add.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_add.c; path = src/curve25519/ed25519/fe_add.c; sourceTree = "<group>"; };
+		1F922A6E694A1524EBE3FB646F0C39D6 /* WhisperTextProtocol.pb-c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WhisperTextProtocol.pb-c.h"; path = "src/WhisperTextProtocol.pb-c.h"; sourceTree = "<group>"; };
+		20D5C548B6EED0E38E20C4B29E248FE2 /* vpool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vpool.h; path = src/vpool.h; sourceTree = "<group>"; };
+		214876E7554EBB66473C7D063563ECF0 /* fe_invert.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_invert.c; path = src/curve25519/ed25519/fe_invert.c; sourceTree = "<group>"; };
+		222677DDC66572E0A84E74364340B9C5 /* SignalProtocolC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SignalProtocolC-umbrella.h"; sourceTree = "<group>"; };
+		22301F7D03818D3759446F8AD5045E34 /* group_session_builder.c */ = {isa = PBXFileReference; includeInIndex = 1; name = group_session_builder.c; path = src/group_session_builder.c; sourceTree = "<group>"; };
+		22DFD6CF4054F9D3E76C7B4D7F09DD0B /* SignalCiphertext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalCiphertext.h; sourceTree = "<group>"; };
+		24E69BDEEFF6079BBF29F575C385589C /* SignalIdentityKeyStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalIdentityKeyStore.h; sourceTree = "<group>"; };
+		2712FC6118CF77D661E1B7C0ED7D50D5 /* fe_neg.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_neg.c; path = src/curve25519/ed25519/fe_neg.c; sourceTree = "<group>"; };
+		277EB084E6F50DCFB984D9439A2D3486 /* ge_p3_to_cached.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_p3_to_cached.c; path = src/curve25519/ed25519/ge_p3_to_cached.c; sourceTree = "<group>"; };
+		27E8805537135CA2CDEF31A4C0A2236E /* SignalSignedPreKey_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalSignedPreKey_Internal.h; sourceTree = "<group>"; };
+		2BE807EE2570C41C4EFEF1C1A7686AC2 /* fe_tobytes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_tobytes.c; path = src/curve25519/ed25519/fe_tobytes.c; sourceTree = "<group>"; };
+		2BEFAE2B576E353FCFC76A4F513B5FFC /* sender_key_state.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sender_key_state.c; path = src/sender_key_state.c; sourceTree = "<group>"; };
+		2C86F3CF74108970040E07C05BD9E461 /* protobuf-c.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "protobuf-c.c"; path = "src/protobuf-c/protobuf-c.c"; sourceTree = "<group>"; };
+		2CCCC4BA074D0D544F959D33C54FF0C0 /* LocalStorageProtocol.pb-c.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "LocalStorageProtocol.pb-c.c"; path = "src/LocalStorageProtocol.pb-c.c"; sourceTree = "<group>"; };
+		2D73CD363338D0956664AD6943AE4850 /* Pods-SignalProtocolTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SignalProtocolTests-resources.sh"; sourceTree = "<group>"; };
+		2D95F98128E92D5086A574A43F0ED2AD /* ratchet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ratchet.h; path = src/ratchet.h; sourceTree = "<group>"; };
+		2E6E7E6DA9336CA64F8A0F279EE2A22E /* fe_sq2.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_sq2.c; path = src/curve25519/ed25519/fe_sq2.c; sourceTree = "<group>"; };
+		2FA72CDFF78FDC2A5D62517F57758BA1 /* Pods-SignalProtocolTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalProtocolTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2FB1E91033C04266CE23129F5AEC6112 /* SignalKeyHelper_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalKeyHelper_Internal.h; sourceTree = "<group>"; };
+		2FD81BE84EF700C3D93BF94C5EDE15F0 /* open.c */ = {isa = PBXFileReference; includeInIndex = 1; name = open.c; path = src/curve25519/ed25519/open.c; sourceTree = "<group>"; };
+		30989EB9501EFFEFF5E682707F2630D7 /* crypto_sign.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_sign.h; path = src/curve25519/ed25519/nacl_includes/crypto_sign.h; sourceTree = "<group>"; };
+		30C287D84FF24EA2AB3FED205C3C7148 /* hkdf.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hkdf.c; path = src/hkdf.c; sourceTree = "<group>"; };
+		31976F74C910AB9BC1117AB8FD63EB19 /* session_builder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = session_builder.h; path = src/session_builder.h; sourceTree = "<group>"; };
+		32662722FCFAC68081185974F695A6FE /* ge_tobytes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_tobytes.c; path = src/curve25519/ed25519/ge_tobytes.c; sourceTree = "<group>"; };
+		33ECD021C877B2CED8679105DBAD8208 /* utlist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = utlist.h; path = src/utlist.h; sourceTree = "<group>"; };
+		34FA18C729F9C02FEF2C9E71697BDFC7 /* SignalSignedPreKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalSignedPreKey.h; sourceTree = "<group>"; };
+		3AFD36EBE341B5C33D6310F74F3D9AA4 /* uthash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = uthash.h; path = src/uthash.h; sourceTree = "<group>"; };
+		3B31835CF7A022B019B4BEF65802A062 /* curve25519-donna.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "curve25519-donna.h"; path = "src/curve25519/curve25519-donna.h"; sourceTree = "<group>"; };
+		3B89D5F433FDD82B5BD85E5151EC4C20 /* ge_p2_0.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_p2_0.c; path = src/curve25519/ed25519/ge_p2_0.c; sourceTree = "<group>"; };
+		3EFCEA44C2F6C19E148F86EE6E9C38A7 /* fe_pow22523.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_pow22523.c; path = src/curve25519/ed25519/fe_pow22523.c; sourceTree = "<group>"; };
+		3F160B858863EF793133C49C0BCA7CE2 /* SignalContext_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalContext_Internal.h; sourceTree = "<group>"; };
+		3FAFD47CAED2009BC1B28B217D043AF5 /* hkdf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hkdf.h; path = src/hkdf.h; sourceTree = "<group>"; };
+		41F1D01CD885DC9AB7F86FC6F7851C21 /* SignalAddress_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalAddress_Internal.h; sourceTree = "<group>"; };
+		43CC76FAB646D756D9215D9D01DAAD77 /* SignalPreKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalPreKey.h; sourceTree = "<group>"; };
+		448E9A2E96D4927B504559878335D5B8 /* blocks.c */ = {isa = PBXFileReference; includeInIndex = 1; name = blocks.c; path = src/curve25519/ed25519/nacl_sha512/blocks.c; sourceTree = "<group>"; };
+		45404983514B47239B3CE8680EDFD609 /* SignalPreKey_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalPreKey_Internal.h; sourceTree = "<group>"; };
+		45645E63DAB20512AB38201BDACD21FB /* SignalKeyPair.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalKeyPair.h; sourceTree = "<group>"; };
+		45B0F4E91AD97D2B34CB1A7E63ED3AAF /* SignalSerializable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalSerializable.h; sourceTree = "<group>"; };
+		4620D289CE28B2610DD5E9D645322834 /* SignalPreKeyMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalPreKeyMessage.h; sourceTree = "<group>"; };
+		471842287F946D30F7D65DD5F4E2F318 /* session_state.c */ = {isa = PBXFileReference; includeInIndex = 1; name = session_state.c; path = src/session_state.c; sourceTree = "<group>"; };
+		48379D1A2166B4DA625E6985F140F98E /* SignalPreKeyBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalPreKeyBundle.h; sourceTree = "<group>"; };
+		48BECCF19321D53EA1FF78E106FD0FD3 /* sc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sc.h; path = src/curve25519/ed25519/sc.h; sourceTree = "<group>"; };
+		4927A408B8FC6F22B95E2B53B838C636 /* SignalAddress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SignalAddress.m; sourceTree = "<group>"; };
+		493E56785968CC7327FB7813085A5AD1 /* ge_p3_tobytes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_p3_tobytes.c; path = src/curve25519/ed25519/ge_p3_tobytes.c; sourceTree = "<group>"; };
+		4A32DF8BA66E36E42C2F3B52F05D5A5D /* base2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = base2.h; path = src/curve25519/ed25519/base2.h; sourceTree = "<group>"; };
+		4B7B335308BB9880D738E129B7959FD1 /* curve.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = curve.h; path = src/curve.h; sourceTree = "<group>"; };
+		4DE96E1AD527FE22122D43E6DD0731AE /* ge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ge.h; path = src/curve25519/ed25519/ge.h; sourceTree = "<group>"; };
+		4E7229A93E579FCCC3407359055D8183 /* SignalProtocol-ObjC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "SignalProtocol-ObjC.modulemap"; sourceTree = "<group>"; };
+		5397CB74CE1701227122941F99757871 /* SignalKeyPair_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalKeyPair_Internal.h; sourceTree = "<group>"; };
+		53C1B5E39AB3E5634E35ED2939B524F2 /* session_builder.c */ = {isa = PBXFileReference; includeInIndex = 1; name = session_builder.c; path = src/session_builder.c; sourceTree = "<group>"; };
+		5543A137BACF5630C73005FA7DB8A2FC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		5671DE4BE4352A50AB5F148E563E4904 /* fe_copy.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_copy.c; path = src/curve25519/ed25519/fe_copy.c; sourceTree = "<group>"; };
+		567FD772A87994B6E758D78C5B8576C9 /* SignalIdentityKeyPair.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalIdentityKeyPair.h; sourceTree = "<group>"; };
+		576CFAC36A4CF726D5C34A762C5D9A2E /* SignalMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SignalMessage.m; sourceTree = "<group>"; };
+		57B55B6BE12D0AD8066D2F124FFFFB5B /* crypto_int64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_int64.h; path = src/curve25519/ed25519/nacl_includes/crypto_int64.h; sourceTree = "<group>"; };
+		58945EED3C8A47B4B3748E4BE6AB5545 /* SignalProtocolC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SignalProtocolC.xcconfig; sourceTree = "<group>"; };
+		5A732F39F99CEBA00D1B71CC97A65EF0 /* Pods-SignalProtocolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SignalProtocolTests.release.xcconfig"; sourceTree = "<group>"; };
+		5B5CA06D1D99AF0807487ED937A19982 /* fe_isnegative.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_isnegative.c; path = src/curve25519/ed25519/fe_isnegative.c; sourceTree = "<group>"; };
+		5C3AE543F147435C88DA4FDF883A2E24 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CB3C57F10A4207FEABB78B48191E658 /* signal_protocol_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = signal_protocol_internal.h; path = src/signal_protocol_internal.h; sourceTree = "<group>"; };
+		5EAA757E2418A647B84F988C1E1B72BF /* SignalPreKeyBundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SignalPreKeyBundle.m; sourceTree = "<group>"; };
+		5F7658C9C4D127BEA6B57F4C30EAE8F2 /* sc_muladd.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sc_muladd.c; path = src/curve25519/ed25519/sc_muladd.c; sourceTree = "<group>"; };
+		5FA3C4FB9C47D3EF60D4F48130E6096D /* sign_modified.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sign_modified.c; path = src/curve25519/ed25519/additions/sign_modified.c; sourceTree = "<group>"; };
+		60A048AECCC8FBF24D8AE968701C83C4 /* ge_add.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ge_add.h; path = src/curve25519/ed25519/ge_add.h; sourceTree = "<group>"; };
+		61AAE8FA6B3118F35E3F8435374DF49B /* signal_protocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = signal_protocol.h; path = src/signal_protocol.h; sourceTree = "<group>"; };
+		62176C9653145F77520A119BF7120A35 /* utarray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = utarray.h; path = src/utarray.h; sourceTree = "<group>"; };
+		672D0019BC8E01EC876C93FC339B2F29 /* session_pre_key.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = session_pre_key.h; path = src/session_pre_key.h; sourceTree = "<group>"; };
+		69F14C553547006AB849B664C369ED10 /* fe_sq.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_sq.c; path = src/curve25519/ed25519/fe_sq.c; sourceTree = "<group>"; };
+		6CC7E5C0EFCC632C4E8D67708B112A38 /* crypto_uint64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_uint64.h; path = src/curve25519/ed25519/nacl_includes/crypto_uint64.h; sourceTree = "<group>"; };
+		6E06C41F880F1A90FF19541D5F97BBCE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F77C8268E523956911D40FD878A760B /* SignalError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SignalError.m; sourceTree = "<group>"; };
+		6FC90ECCF75E680FDC247B061D66BCD3 /* SignalSignedPreKeyStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalSignedPreKeyStore.h; sourceTree = "<group>"; };
+		703116C3BF57F613B7B1EEB492426CD0 /* curve25519-donna.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "curve25519-donna.c"; path = "src/curve25519/curve25519-donna.c"; sourceTree = "<group>"; };
+		704FBE7B32AE7257F381D30E49ADF8EC /* crypto_verify_32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_verify_32.h; path = src/curve25519/ed25519/nacl_includes/crypto_verify_32.h; sourceTree = "<group>"; };
+		743DB4B38D8EBD406D8B04247F9DA55D /* SignalProtocol-ObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SignalProtocol-ObjC-dummy.m"; sourceTree = "<group>"; };
+		750FC2E837DB689C1C10C5CBC6A82366 /* SignalKeyHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalKeyHelper.h; sourceTree = "<group>"; };
+		77C12D1DDEC2EF8C41210DF7D031B5BA /* SignalProtocol-ObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SignalProtocol-ObjC.xcconfig"; sourceTree = "<group>"; };
+		7900867763D81AE6FF1DAFC1578F408D /* SignalSessionBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalSessionBuilder.h; sourceTree = "<group>"; };
+		79BB2CAEBC61156F7B4E92FA0A0ECF4B /* ge_precomp_0.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_precomp_0.c; path = src/curve25519/ed25519/ge_precomp_0.c; sourceTree = "<group>"; };
+		79D7F5D00A34FA2B3B2562A2DD712936 /* ge_madd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ge_madd.h; path = src/curve25519/ed25519/ge_madd.h; sourceTree = "<group>"; };
+		7C54BD98C4BD267DF4364C552E2B6129 /* d.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = d.h; path = src/curve25519/ed25519/d.h; sourceTree = "<group>"; };
+		7D34F6ACDA2A2A0DA430476CFB40AC01 /* SignalStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalStorage.h; sourceTree = "<group>"; };
+		7D4B7AB62C18830D23F9D879E8A879D5 /* SignalSenderKeyStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalSenderKeyStore.h; sourceTree = "<group>"; };
+		7DD6A460AC99EE916EA6FF1599D4215C /* SignalProtocol-ObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SignalProtocol-ObjC-prefix.pch"; sourceTree = "<group>"; };
+		7E39A89B9CA7E5F0E56B9D3EDE1C9C32 /* ge_frombytes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_frombytes.c; path = src/curve25519/ed25519/ge_frombytes.c; sourceTree = "<group>"; };
+		7E62470011653E797245ED7AEB75357D /* group_cipher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = group_cipher.h; path = src/group_cipher.h; sourceTree = "<group>"; };
+		7E62C45FDDC0A05E4BF02D1415D8A7B7 /* SignalMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalMessage.h; sourceTree = "<group>"; };
+		7F691878661A7E22E3D812A20F327BEC /* curve_sigs.c */ = {isa = PBXFileReference; includeInIndex = 1; name = curve_sigs.c; path = src/curve25519/ed25519/additions/curve_sigs.c; sourceTree = "<group>"; };
+		7FBD9AD8218FB1D2DA4978D5A686E671 /* crypto_sign_edwards25519sha512batch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_sign_edwards25519sha512batch.h; path = src/curve25519/ed25519/nacl_includes/crypto_sign_edwards25519sha512batch.h; sourceTree = "<group>"; };
+		80C524B755DF769972F67C89CF75541E /* group_cipher.c */ = {isa = PBXFileReference; includeInIndex = 1; name = group_cipher.c; path = src/group_cipher.c; sourceTree = "<group>"; };
+		81AC54B529E5C2D332BC08062D235860 /* session_cipher.c */ = {isa = PBXFileReference; includeInIndex = 1; name = session_cipher.c; path = src/session_cipher.c; sourceTree = "<group>"; };
+		8327CCE6D5E2BC472C96D6387BDF0F73 /* ge_p1p1_to_p3.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_p1p1_to_p3.c; path = src/curve25519/ed25519/ge_p1p1_to_p3.c; sourceTree = "<group>"; };
+		839905BB6847006D6CD9791E995BD861 /* crypto_uint32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_uint32.h; path = src/curve25519/ed25519/nacl_includes/crypto_uint32.h; sourceTree = "<group>"; };
+		86B957D7C080A300BE85B4E8CEA083F2 /* SignalPreKeyMessage_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalPreKeyMessage_Internal.h; sourceTree = "<group>"; };
+		8A306DD1FF3605440985F96CFA4FB60C /* SignalPreKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SignalPreKey.m; sourceTree = "<group>"; };
+		8F9D2A981E7302521C9828469071217D /* sender_key_record.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sender_key_record.c; path = src/sender_key_record.c; sourceTree = "<group>"; };
+		9258F11AB6207E71112031CB1314D478 /* curve.c */ = {isa = PBXFileReference; includeInIndex = 1; name = curve.c; path = src/curve.c; sourceTree = "<group>"; };
+		9269D2B2A9DB33BDEEE32486B6468F75 /* SignalPreKeyBundle_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalPreKeyBundle_Internal.h; sourceTree = "<group>"; };
+		931DCAD58B6D4B4BE640444B3FAE37F1 /* curve_sigs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = curve_sigs.h; path = src/curve25519/ed25519/additions/curve_sigs.h; sourceTree = "<group>"; };
+		93A41DD4F6B72E1246D5125495309AF9 /* fe_mul.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_mul.c; path = src/curve25519/ed25519/fe_mul.c; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9444881E238D596C84078CB392C7826E /* Pods-SignalProtocolTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SignalProtocolTests.modulemap"; sourceTree = "<group>"; };
+		9503333A733700B6DF51B9608C9DE5CE /* ge_add.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_add.c; path = src/curve25519/ed25519/ge_add.c; sourceTree = "<group>"; };
+		955017C54E799260E5F906A1C057FE21 /* SignalCommonCryptoProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalCommonCryptoProvider.h; sourceTree = "<group>"; };
+		99FC6C48CB0BF5AA83A66E205B4589A7 /* SignalSignedPreKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SignalSignedPreKey.m; sourceTree = "<group>"; };
+		9CBB001ECB8B0C8A77EE6A347CFADF50 /* d2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = d2.h; path = src/curve25519/ed25519/d2.h; sourceTree = "<group>"; };
+		9D5FAB7ACCCFFD4B78C0F67B9D50661A /* SignalSessionCipher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalSessionCipher.h; sourceTree = "<group>"; };
+		9F011BB7AAEE4979BA6FE4698EE4993D /* pow225521.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pow225521.h; path = src/curve25519/ed25519/pow225521.h; sourceTree = "<group>"; };
+		9F9D2936051F244CC9F9B600044CA923 /* SignalStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SignalStorage.m; sourceTree = "<group>"; };
+		A1CA3A7AEE41C14CA5691CEAAE6E7A34 /* session_cipher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = session_cipher.h; path = src/session_cipher.h; sourceTree = "<group>"; };
+		A1EE3B229AF21848EE3E3FF0246AF260 /* session_state.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = session_state.h; path = src/session_state.h; sourceTree = "<group>"; };
+		A202B3D25A7C6AAFC942BFC8B65CA8E9 /* LocalStorageProtocol.pb-c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LocalStorageProtocol.pb-c.h"; path = "src/LocalStorageProtocol.pb-c.h"; sourceTree = "<group>"; };
+		A47C12474302F6EB8BE4CEE56F95A620 /* SignalProtocolC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SignalProtocolC-dummy.m"; sourceTree = "<group>"; };
+		A5738B7574EC1D8D000918DB6411A4AC /* SignalKeyPair.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SignalKeyPair.m; sourceTree = "<group>"; };
+		A5BD7C8244420BA269574D7EB755719F /* fingerprint.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fingerprint.c; path = src/fingerprint.c; sourceTree = "<group>"; };
+		A61B659766A48ADD6FA093DCC29E5389 /* SignalProtocol-ObjC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SignalProtocol-ObjC-umbrella.h"; sourceTree = "<group>"; };
+		A670B8A22F87EE1480F6927F7826EA7D /* SignalCommonCryptoProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SignalCommonCryptoProvider.m; sourceTree = "<group>"; };
+		A6D4F8BA95484D0EECD096817240E6EF /* signal_protocol_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = signal_protocol_types.h; path = src/signal_protocol_types.h; sourceTree = "<group>"; };
+		A7AAA9337E695FF820C1F2C4B4C126E8 /* Pods-SignalProtocolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SignalProtocolTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA8DE51EC52EC620EC390E425A0A8AD9 /* sender_key_state.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sender_key_state.h; path = src/sender_key_state.h; sourceTree = "<group>"; };
+		AB4BEA322239BA0C002D94412938183C /* fe_cmov.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_cmov.c; path = src/curve25519/ed25519/fe_cmov.c; sourceTree = "<group>"; };
+		AC30632D87FEBA99B559A34B5E7F53CA /* vpool.c */ = {isa = PBXFileReference; includeInIndex = 1; name = vpool.c; path = src/vpool.c; sourceTree = "<group>"; };
+		AE2194D06DBB1E39B8D8A691C7B3BD23 /* SignalSessionCipher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SignalSessionCipher.m; sourceTree = "<group>"; };
+		AF3FCE7C5F1F2DD535988BFD3BF03DAD /* utstring.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = utstring.h; path = src/utstring.h; sourceTree = "<group>"; };
+		B0213530FCCD59805C2D6BAE1D3EEB14 /* SignalSessionBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SignalSessionBuilder.m; sourceTree = "<group>"; };
+		B1EBD507D13270B929FAB1F58026D4D9 /* Pods-SignalProtocolTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SignalProtocolTests-frameworks.sh"; sourceTree = "<group>"; };
+		B3C0C7FE7C940935B6879ECA8C1DCCF0 /* SignalProtocolObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SignalProtocolObjC.framework; path = "SignalProtocol-ObjC.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B468879AF9CA47072539203AB333DDB6 /* SignalProtocolC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SignalProtocolC.modulemap; sourceTree = "<group>"; };
+		B71316C3250DF2ECB6B9E2EFA86D7F1F /* SignalIdentityKeyPair_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalIdentityKeyPair_Internal.h; sourceTree = "<group>"; };
+		BBD23ED8400972699418FD224EEB20F3 /* SignalProtocolC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SignalProtocolC-prefix.pch"; sourceTree = "<group>"; };
+		BC9DDF714F683659ED75069FE20E639E /* SignalProtocolC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SignalProtocolC.framework; path = SignalProtocolC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0FAEEC29E9A91D37DC11D9E0B0778D /* compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = compare.h; path = src/curve25519/ed25519/additions/compare.h; sourceTree = "<group>"; };
+		C05145D4E69C51ADA231A808D26990F6 /* zeroize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zeroize.h; path = src/curve25519/ed25519/additions/zeroize.h; sourceTree = "<group>"; };
+		C0C71F2087BB75F4B86105DC776904D1 /* sign.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sign.c; path = src/curve25519/ed25519/sign.c; sourceTree = "<group>"; };
+		C0DBFBAEDA5C65E7B4B316A2651EBD20 /* signal_protocol.c */ = {isa = PBXFileReference; includeInIndex = 1; name = signal_protocol.c; path = src/signal_protocol.c; sourceTree = "<group>"; };
+		C13E5F78ADFEC970B6921E2AF99473AF /* SignalAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalAddress.h; sourceTree = "<group>"; };
+		C1970FF39E9B9603CC15A3E96912D40A /* fe_frombytes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_frombytes.c; path = src/curve25519/ed25519/fe_frombytes.c; sourceTree = "<group>"; };
+		C1AB2C566460057DD245A8C63793B2D8 /* ge_madd.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_madd.c; path = src/curve25519/ed25519/ge_madd.c; sourceTree = "<group>"; };
+		C5C9AA62E9C09DF8C078E5C5BAEA889C /* fe_1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_1.c; path = src/curve25519/ed25519/fe_1.c; sourceTree = "<group>"; };
+		C6E14D6B912952753D0F7D1BAF00265F /* key_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = key_helper.h; path = src/key_helper.h; sourceTree = "<group>"; };
+		C771945C236BFEFA6D27B6FE3105183C /* crypto_hash_sha512.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_hash_sha512.h; path = src/curve25519/ed25519/additions/crypto_hash_sha512.h; sourceTree = "<group>"; };
+		C79A7853C12DF899201F0C045F1AFF0A /* protocol.c */ = {isa = PBXFileReference; includeInIndex = 1; name = protocol.c; path = src/protocol.c; sourceTree = "<group>"; };
+		C7B19244F1BD51E46F089DEFBAA8147D /* sender_key.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sender_key.h; path = src/sender_key.h; sourceTree = "<group>"; };
+		C957F913094EF8BBCCBF56927796C1A5 /* fe_isnonzero.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_isnonzero.c; path = src/curve25519/ed25519/fe_isnonzero.c; sourceTree = "<group>"; };
+		CB7948514F9A14CF23FD2CAB89CF7650 /* ge_sub.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_sub.c; path = src/curve25519/ed25519/ge_sub.c; sourceTree = "<group>"; };
+		CC369907E7D1BD020BDED2CB44C789C7 /* ge_p3_dbl.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_p3_dbl.c; path = src/curve25519/ed25519/ge_p3_dbl.c; sourceTree = "<group>"; };
+		CCDE22769E86CF53A9C58CA69763181D /* fingerprint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fingerprint.h; path = src/fingerprint.h; sourceTree = "<group>"; };
+		CEFE568D360D9596065ACA4A2519DA91 /* session_pre_key.c */ = {isa = PBXFileReference; includeInIndex = 1; name = session_pre_key.c; path = src/session_pre_key.c; sourceTree = "<group>"; };
+		CF11C69E2FC61F7B04EF6454DE9AD27B /* pow22523.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pow22523.h; path = src/curve25519/ed25519/pow22523.h; sourceTree = "<group>"; };
+		D07A69A46F171C0B001FB7F907E7BA15 /* ratchet.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ratchet.c; path = src/ratchet.c; sourceTree = "<group>"; };
+		D17CBF0248B3953B027FC186D0661B13 /* SignalMessage_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalMessage_Internal.h; sourceTree = "<group>"; };
+		D38FAABE4B876403EC497E68593BCF1A /* Pods-SignalProtocolTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SignalProtocolTests-dummy.m"; sourceTree = "<group>"; };
+		D3EA2D7F4B1C0B2C7D65BACC152D8B56 /* protocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = protocol.h; path = src/protocol.h; sourceTree = "<group>"; };
+		D4C5487225A0981A0FB22041B0A04448 /* fe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fe.h; path = src/curve25519/ed25519/fe.h; sourceTree = "<group>"; };
+		D55BA4A873C153F2B9E884270001F37A /* session_record.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = session_record.h; path = src/session_record.h; sourceTree = "<group>"; };
+		D7E3516AD25BDF770DBE2239A1A79A79 /* fe_0.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fe_0.c; path = src/curve25519/ed25519/fe_0.c; sourceTree = "<group>"; };
+		DE903709F3582CCC4057998980C1BA25 /* FingerprintProtocol.pb-c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FingerprintProtocol.pb-c.h"; path = "src/FingerprintProtocol.pb-c.h"; sourceTree = "<group>"; };
+		E00105FA64B5608F8E3062FA4F6D456A /* WhisperTextProtocol.pb-c.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "WhisperTextProtocol.pb-c.c"; path = "src/WhisperTextProtocol.pb-c.c"; sourceTree = "<group>"; };
+		E0E9CB46BD6EACE949700EF1CBDD9B9A /* SignalProtocolC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SignalProtocolC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29B64AF204805A32C1FEB1FD76ED2AA /* SignalPreKeyMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SignalPreKeyMessage.m; sourceTree = "<group>"; };
+		E3CA77D7F8F5E9A8730F2CC0210A483C /* zeroize.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zeroize.c; path = src/curve25519/ed25519/additions/zeroize.c; sourceTree = "<group>"; };
+		E50AE869F32C78A7E0ECB07BAD49E03C /* ge_double_scalarmult.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_double_scalarmult.c; path = src/curve25519/ed25519/ge_double_scalarmult.c; sourceTree = "<group>"; };
+		E5ABF7254F3189A2B5EF7359E295412E /* Pods-SignalProtocolTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SignalProtocolTests-umbrella.h"; sourceTree = "<group>"; };
+		EC7A361F7DBB6A1A338A7C24BBC20550 /* SignalIdentityKeyPair.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SignalIdentityKeyPair.m; sourceTree = "<group>"; };
+		EFE751B8EADB3F39B1DE0DD45CAFB68A /* SignalContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SignalContext.m; sourceTree = "<group>"; };
+		F02530AFD8C10CDBEFE2F812D9078DA3 /* SignalKeyHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SignalKeyHelper.m; sourceTree = "<group>"; };
+		F0FFBC803E02128969E4B1F1B1DE5D4E /* FingerprintProtocol.pb-c.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "FingerprintProtocol.pb-c.c"; path = "src/FingerprintProtocol.pb-c.c"; sourceTree = "<group>"; };
+		F1C38BFD64564D609C4C805FB82E17F2 /* ge_sub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ge_sub.h; path = src/curve25519/ed25519/ge_sub.h; sourceTree = "<group>"; };
+		F26816329758A1C45301956A80E412C5 /* sqrtm1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqrtm1.h; path = src/curve25519/ed25519/sqrtm1.h; sourceTree = "<group>"; };
+		F36FFDE7C4814B25228789109EAFDFE1 /* sc_reduce.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sc_reduce.c; path = src/curve25519/ed25519/sc_reduce.c; sourceTree = "<group>"; };
+		F5A4EE1E0CB7B031410A6D1627C6C185 /* session_builder_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = session_builder_internal.h; path = src/session_builder_internal.h; sourceTree = "<group>"; };
+		F984FE99607877B5728C077D398229D7 /* ge_p2_dbl.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_p2_dbl.c; path = src/curve25519/ed25519/ge_p2_dbl.c; sourceTree = "<group>"; };
+		F9FC7ED11B4E9DF1D3A1F24ED4272E7E /* base.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = base.h; path = src/curve25519/ed25519/base.h; sourceTree = "<group>"; };
+		FAD7C8E03E27318FC9BDB447BA79D339 /* ge_p1p1_to_p2.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ge_p1p1_to_p2.c; path = src/curve25519/ed25519/ge_p1p1_to_p2.c; sourceTree = "<group>"; };
+		FDB3DB6B8D1FDC4461A9E2A265DAC7C8 /* SignalStorage_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalStorage_Internal.h; sourceTree = "<group>"; };
+		FF350456C5E96CD11486B86208815E57 /* crypto_int32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_int32.h; path = src/curve25519/ed25519/nacl_includes/crypto_int32.h; sourceTree = "<group>"; };
+		FFEDCED44E1B4A8E90349E3D123F0FC6 /* SignalError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SignalError.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2298723785909B39CC7EFBAFDB42717F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A2EE266CF8CD4150EBC5872522A20AD /* Cocoa.framework in Frameworks */,
+				1445E1BCF08DC855CCD01AED6B0ED7CE /* SignalProtocolC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		945D409EA34093254A5C73BE4A10F9D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F93BD02A1C3B2A899F53C4663DD5269 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E032CDDA49213A844AC42883807EF8FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD8356AC6B6CE958E9FB1A02FE97FBC2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02358ECBE2E75C2CC6E050924EFEA9FF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CA8A1C73921EEF9C5CB472E46A3EA49 /* SignalProtocol-ObjC */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2766911138C7C503CA4FE489199AD460 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C3AE543F147435C88DA4FDF883A2E24 /* Info.plist */,
+				B468879AF9CA47072539203AB333DDB6 /* SignalProtocolC.modulemap */,
+				58945EED3C8A47B4B3748E4BE6AB5545 /* SignalProtocolC.xcconfig */,
+				A47C12474302F6EB8BE4CEE56F95A620 /* SignalProtocolC-dummy.m */,
+				BBD23ED8400972699418FD224EEB20F3 /* SignalProtocolC-prefix.pch */,
+				222677DDC66572E0A84E74364340B9C5 /* SignalProtocolC-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SignalProtocolC";
+			sourceTree = "<group>";
+		};
+		2DFE883E70F314A1963D582021217BD5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C13E5F78ADFEC970B6921E2AF99473AF /* SignalAddress.h */,
+				4927A408B8FC6F22B95E2B53B838C636 /* SignalAddress.m */,
+				41F1D01CD885DC9AB7F86FC6F7851C21 /* SignalAddress_Internal.h */,
+				22DFD6CF4054F9D3E76C7B4D7F09DD0B /* SignalCiphertext.h */,
+				1D380BEAE0C3156CD0DA6F1C2351FB42 /* SignalCiphertext.m */,
+				567FD772A87994B6E758D78C5B8576C9 /* SignalIdentityKeyPair.h */,
+				EC7A361F7DBB6A1A338A7C24BBC20550 /* SignalIdentityKeyPair.m */,
+				B71316C3250DF2ECB6B9E2EFA86D7F1F /* SignalIdentityKeyPair_Internal.h */,
+				45645E63DAB20512AB38201BDACD21FB /* SignalKeyPair.h */,
+				A5738B7574EC1D8D000918DB6411A4AC /* SignalKeyPair.m */,
+				5397CB74CE1701227122941F99757871 /* SignalKeyPair_Internal.h */,
+				7E62C45FDDC0A05E4BF02D1415D8A7B7 /* SignalMessage.h */,
+				576CFAC36A4CF726D5C34A762C5D9A2E /* SignalMessage.m */,
+				D17CBF0248B3953B027FC186D0661B13 /* SignalMessage_Internal.h */,
+				43CC76FAB646D756D9215D9D01DAAD77 /* SignalPreKey.h */,
+				8A306DD1FF3605440985F96CFA4FB60C /* SignalPreKey.m */,
+				45404983514B47239B3CE8680EDFD609 /* SignalPreKey_Internal.h */,
+				48379D1A2166B4DA625E6985F140F98E /* SignalPreKeyBundle.h */,
+				5EAA757E2418A647B84F988C1E1B72BF /* SignalPreKeyBundle.m */,
+				9269D2B2A9DB33BDEEE32486B6468F75 /* SignalPreKeyBundle_Internal.h */,
+				4620D289CE28B2610DD5E9D645322834 /* SignalPreKeyMessage.h */,
+				E29B64AF204805A32C1FEB1FD76ED2AA /* SignalPreKeyMessage.m */,
+				86B957D7C080A300BE85B4E8CEA083F2 /* SignalPreKeyMessage_Internal.h */,
+				45B0F4E91AD97D2B34CB1A7E63ED3AAF /* SignalSerializable.h */,
+				34FA18C729F9C02FEF2C9E71697BDFC7 /* SignalSignedPreKey.h */,
+				99FC6C48CB0BF5AA83A66E205B4589A7 /* SignalSignedPreKey.m */,
+				27E8805537135CA2CDEF31A4C0A2236E /* SignalSignedPreKey_Internal.h */,
+			);
+			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		37A0162F7108DB763B83D0519C0A6B09 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				955017C54E799260E5F906A1C057FE21 /* SignalCommonCryptoProvider.h */,
+				A670B8A22F87EE1480F6927F7826EA7D /* SignalCommonCryptoProvider.m */,
+			);
+			name = Crypto;
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		3CA8A1C73921EEF9C5CB472E46A3EA49 /* SignalProtocol-ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				7F3C4CD3FCFB2AEB89D7338BCAFE4868 /* Classes */,
+				9E0CDC21002E4DAB0FB75823B41125AA /* Support Files */,
+			);
+			name = "SignalProtocol-ObjC";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		4D689395D04616AF73F7E2759F62FC9F /* SignalProtocolC */ = {
+			isa = PBXGroup;
+			children = (
+				F9FC7ED11B4E9DF1D3A1F24ED4272E7E /* base.h */,
+				4A32DF8BA66E36E42C2F3B52F05D5A5D /* base2.h */,
+				448E9A2E96D4927B504559878335D5B8 /* blocks.c */,
+				16DC5B52BA392B4C46BEB4930FB02064 /* compare.c */,
+				BF0FAEEC29E9A91D37DC11D9E0B0778D /* compare.h */,
+				C771945C236BFEFA6D27B6FE3105183C /* crypto_hash_sha512.h */,
+				FF350456C5E96CD11486B86208815E57 /* crypto_int32.h */,
+				57B55B6BE12D0AD8066D2F124FFFFB5B /* crypto_int64.h */,
+				30989EB9501EFFEFF5E682707F2630D7 /* crypto_sign.h */,
+				7FBD9AD8218FB1D2DA4978D5A686E671 /* crypto_sign_edwards25519sha512batch.h */,
+				839905BB6847006D6CD9791E995BD861 /* crypto_uint32.h */,
+				6CC7E5C0EFCC632C4E8D67708B112A38 /* crypto_uint64.h */,
+				704FBE7B32AE7257F381D30E49ADF8EC /* crypto_verify_32.h */,
+				9258F11AB6207E71112031CB1314D478 /* curve.c */,
+				4B7B335308BB9880D738E129B7959FD1 /* curve.h */,
+				703116C3BF57F613B7B1EEB492426CD0 /* curve25519-donna.c */,
+				3B31835CF7A022B019B4BEF65802A062 /* curve25519-donna.h */,
+				7F691878661A7E22E3D812A20F327BEC /* curve_sigs.c */,
+				931DCAD58B6D4B4BE640444B3FAE37F1 /* curve_sigs.h */,
+				7C54BD98C4BD267DF4364C552E2B6129 /* d.h */,
+				9CBB001ECB8B0C8A77EE6A347CFADF50 /* d2.h */,
+				D4C5487225A0981A0FB22041B0A04448 /* fe.h */,
+				D7E3516AD25BDF770DBE2239A1A79A79 /* fe_0.c */,
+				C5C9AA62E9C09DF8C078E5C5BAEA889C /* fe_1.c */,
+				1EF787C0ED57A2F8338CE2B892009A4B /* fe_add.c */,
+				AB4BEA322239BA0C002D94412938183C /* fe_cmov.c */,
+				5671DE4BE4352A50AB5F148E563E4904 /* fe_copy.c */,
+				C1970FF39E9B9603CC15A3E96912D40A /* fe_frombytes.c */,
+				214876E7554EBB66473C7D063563ECF0 /* fe_invert.c */,
+				5B5CA06D1D99AF0807487ED937A19982 /* fe_isnegative.c */,
+				C957F913094EF8BBCCBF56927796C1A5 /* fe_isnonzero.c */,
+				93A41DD4F6B72E1246D5125495309AF9 /* fe_mul.c */,
+				2712FC6118CF77D661E1B7C0ED7D50D5 /* fe_neg.c */,
+				3EFCEA44C2F6C19E148F86EE6E9C38A7 /* fe_pow22523.c */,
+				69F14C553547006AB849B664C369ED10 /* fe_sq.c */,
+				2E6E7E6DA9336CA64F8A0F279EE2A22E /* fe_sq2.c */,
+				17AD1A6F44E76E969CD09FBC2037A121 /* fe_sub.c */,
+				2BE807EE2570C41C4EFEF1C1A7686AC2 /* fe_tobytes.c */,
+				A5BD7C8244420BA269574D7EB755719F /* fingerprint.c */,
+				CCDE22769E86CF53A9C58CA69763181D /* fingerprint.h */,
+				F0FFBC803E02128969E4B1F1B1DE5D4E /* FingerprintProtocol.pb-c.c */,
+				DE903709F3582CCC4057998980C1BA25 /* FingerprintProtocol.pb-c.h */,
+				4DE96E1AD527FE22122D43E6DD0731AE /* ge.h */,
+				9503333A733700B6DF51B9608C9DE5CE /* ge_add.c */,
+				60A048AECCC8FBF24D8AE968701C83C4 /* ge_add.h */,
+				E50AE869F32C78A7E0ECB07BAD49E03C /* ge_double_scalarmult.c */,
+				7E39A89B9CA7E5F0E56B9D3EDE1C9C32 /* ge_frombytes.c */,
+				C1AB2C566460057DD245A8C63793B2D8 /* ge_madd.c */,
+				79D7F5D00A34FA2B3B2562A2DD712936 /* ge_madd.h */,
+				1345EF3145F31745DACCC7336D50DCB7 /* ge_msub.c */,
+				1374B2CCE4074CB21C13C5C95CA4FB3E /* ge_msub.h */,
+				FAD7C8E03E27318FC9BDB447BA79D339 /* ge_p1p1_to_p2.c */,
+				8327CCE6D5E2BC472C96D6387BDF0F73 /* ge_p1p1_to_p3.c */,
+				3B89D5F433FDD82B5BD85E5151EC4C20 /* ge_p2_0.c */,
+				F984FE99607877B5728C077D398229D7 /* ge_p2_dbl.c */,
+				0A7DB52BF6AF4D54DD9CDE1766270A46 /* ge_p2_dbl.h */,
+				0BC6DA53E979452FD4960B6216800D98 /* ge_p3_0.c */,
+				CC369907E7D1BD020BDED2CB44C789C7 /* ge_p3_dbl.c */,
+				277EB084E6F50DCFB984D9439A2D3486 /* ge_p3_to_cached.c */,
+				16AA4AE8C45E40779C7F04303E44D7A5 /* ge_p3_to_p2.c */,
+				493E56785968CC7327FB7813085A5AD1 /* ge_p3_tobytes.c */,
+				79BB2CAEBC61156F7B4E92FA0A0ECF4B /* ge_precomp_0.c */,
+				0CEE4F72AEB92B36608B5821F2C96F21 /* ge_scalarmult_base.c */,
+				CB7948514F9A14CF23FD2CAB89CF7650 /* ge_sub.c */,
+				F1C38BFD64564D609C4C805FB82E17F2 /* ge_sub.h */,
+				32662722FCFAC68081185974F695A6FE /* ge_tobytes.c */,
+				80C524B755DF769972F67C89CF75541E /* group_cipher.c */,
+				7E62470011653E797245ED7AEB75357D /* group_cipher.h */,
+				22301F7D03818D3759446F8AD5045E34 /* group_session_builder.c */,
+				1C1B7650106A37509D7DC6D5E780328A /* group_session_builder.h */,
+				0EE828D3140581ACDD6A6767773AC925 /* hash.c */,
+				30C287D84FF24EA2AB3FED205C3C7148 /* hkdf.c */,
+				3FAFD47CAED2009BC1B28B217D043AF5 /* hkdf.h */,
+				0983DF6F139837522E71FD32FB8376BB /* key_helper.c */,
+				C6E14D6B912952753D0F7D1BAF00265F /* key_helper.h */,
+				2CCCC4BA074D0D544F959D33C54FF0C0 /* LocalStorageProtocol.pb-c.c */,
+				A202B3D25A7C6AAFC942BFC8B65CA8E9 /* LocalStorageProtocol.pb-c.h */,
+				2FD81BE84EF700C3D93BF94C5EDE15F0 /* open.c */,
+				CF11C69E2FC61F7B04EF6454DE9AD27B /* pow22523.h */,
+				9F011BB7AAEE4979BA6FE4698EE4993D /* pow225521.h */,
+				2C86F3CF74108970040E07C05BD9E461 /* protobuf-c.c */,
+				0EF592A298BCB0A1BB2303CFB7C83550 /* protobuf-c.h */,
+				C79A7853C12DF899201F0C045F1AFF0A /* protocol.c */,
+				D3EA2D7F4B1C0B2C7D65BACC152D8B56 /* protocol.h */,
+				D07A69A46F171C0B001FB7F907E7BA15 /* ratchet.c */,
+				2D95F98128E92D5086A574A43F0ED2AD /* ratchet.h */,
+				48BECCF19321D53EA1FF78E106FD0FD3 /* sc.h */,
+				5F7658C9C4D127BEA6B57F4C30EAE8F2 /* sc_muladd.c */,
+				F36FFDE7C4814B25228789109EAFDFE1 /* sc_reduce.c */,
+				1130EDF06BBE8C3A68E82FE5984F4899 /* sender_key.c */,
+				C7B19244F1BD51E46F089DEFBAA8147D /* sender_key.h */,
+				8F9D2A981E7302521C9828469071217D /* sender_key_record.c */,
+				07EC2DA90C6781DBF8B4747B4A6596E4 /* sender_key_record.h */,
+				2BEFAE2B576E353FCFC76A4F513B5FFC /* sender_key_state.c */,
+				AA8DE51EC52EC620EC390E425A0A8AD9 /* sender_key_state.h */,
+				53C1B5E39AB3E5634E35ED2939B524F2 /* session_builder.c */,
+				31976F74C910AB9BC1117AB8FD63EB19 /* session_builder.h */,
+				F5A4EE1E0CB7B031410A6D1627C6C185 /* session_builder_internal.h */,
+				81AC54B529E5C2D332BC08062D235860 /* session_cipher.c */,
+				A1CA3A7AEE41C14CA5691CEAAE6E7A34 /* session_cipher.h */,
+				CEFE568D360D9596065ACA4A2519DA91 /* session_pre_key.c */,
+				672D0019BC8E01EC876C93FC339B2F29 /* session_pre_key.h */,
+				175C5AD84A36E5ECE8B7D4F1CB2E03F4 /* session_record.c */,
+				D55BA4A873C153F2B9E884270001F37A /* session_record.h */,
+				471842287F946D30F7D65DD5F4E2F318 /* session_state.c */,
+				A1EE3B229AF21848EE3E3FF0246AF260 /* session_state.h */,
+				C0C71F2087BB75F4B86105DC776904D1 /* sign.c */,
+				5FA3C4FB9C47D3EF60D4F48130E6096D /* sign_modified.c */,
+				C0DBFBAEDA5C65E7B4B316A2651EBD20 /* signal_protocol.c */,
+				61AAE8FA6B3118F35E3F8435374DF49B /* signal_protocol.h */,
+				5CB3C57F10A4207FEABB78B48191E658 /* signal_protocol_internal.h */,
+				A6D4F8BA95484D0EECD096817240E6EF /* signal_protocol_types.h */,
+				F26816329758A1C45301956A80E412C5 /* sqrtm1.h */,
+				62176C9653145F77520A119BF7120A35 /* utarray.h */,
+				3AFD36EBE341B5C33D6310F74F3D9AA4 /* uthash.h */,
+				33ECD021C877B2CED8679105DBAD8208 /* utlist.h */,
+				AF3FCE7C5F1F2DD535988BFD3BF03DAD /* utstring.h */,
+				AC30632D87FEBA99B559A34B5E7F53CA /* vpool.c */,
+				20D5C548B6EED0E38E20C4B29E248FE2 /* vpool.h */,
+				E00105FA64B5608F8E3062FA4F6D456A /* WhisperTextProtocol.pb-c.c */,
+				1F922A6E694A1524EBE3FB646F0C39D6 /* WhisperTextProtocol.pb-c.h */,
+				E3CA77D7F8F5E9A8730F2CC0210A483C /* zeroize.c */,
+				C05145D4E69C51ADA231A808D26990F6 /* zeroize.h */,
+				2766911138C7C503CA4FE489199AD460 /* Support Files */,
+			);
+			name = SignalProtocolC;
+			path = SignalProtocolC;
+			sourceTree = "<group>";
+		};
+		594D33B513474ACD0E4A051B4E16CBE4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D689395D04616AF73F7E2759F62FC9F /* SignalProtocolC */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5E8382B1D43D0F21DA9FF8DB1E45C4AB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2A0CD412EA755CBD4FB088971F12856 /* Pods-SignalProtocolTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		63FACEC4F8AAB3A7345C4DDA852A0C05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0E9CB46BD6EACE949700EF1CBDD9B9A /* SignalProtocolC.framework */,
+				C3CE94816557B15B26609F9FC2BDE4DF /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6928EDB1C4681B3888E6E59096CE56D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				049703333012273DC71244379D7CBB20 /* Pods_SignalProtocolTests.framework */,
+				BC9DDF714F683659ED75069FE20E639E /* SignalProtocolC.framework */,
+				B3C0C7FE7C940935B6879ECA8C1DCCF0 /* SignalProtocolObjC.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				02358ECBE2E75C2CC6E050924EFEA9FF /* Development Pods */,
+				63FACEC4F8AAB3A7345C4DDA852A0C05 /* Frameworks */,
+				594D33B513474ACD0E4A051B4E16CBE4 /* Pods */,
+				6928EDB1C4681B3888E6E59096CE56D6 /* Products */,
+				5E8382B1D43D0F21DA9FF8DB1E45C4AB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F3C4CD3FCFB2AEB89D7338BCAFE4868 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				075F627F56BB07ED6D5B99EE65064B6F /* SignalContext.h */,
+				EFE751B8EADB3F39B1DE0DD45CAFB68A /* SignalContext.m */,
+				3F160B858863EF793133C49C0BCA7CE2 /* SignalContext_Internal.h */,
+				750FC2E837DB689C1C10C5CBC6A82366 /* SignalKeyHelper.h */,
+				F02530AFD8C10CDBEFE2F812D9078DA3 /* SignalKeyHelper.m */,
+				2FB1E91033C04266CE23129F5AEC6112 /* SignalKeyHelper_Internal.h */,
+				7900867763D81AE6FF1DAFC1578F408D /* SignalSessionBuilder.h */,
+				B0213530FCCD59805C2D6BAE1D3EEB14 /* SignalSessionBuilder.m */,
+				9D5FAB7ACCCFFD4B78C0F67B9D50661A /* SignalSessionCipher.h */,
+				AE2194D06DBB1E39B8D8A691C7B3BD23 /* SignalSessionCipher.m */,
+				37A0162F7108DB763B83D0519C0A6B09 /* Crypto */,
+				2DFE883E70F314A1963D582021217BD5 /* Models */,
+				BC856BB79B89C2A078FF03B5855F2AA1 /* Storage */,
+				FC94B1C08532F8E6DCAE1C4D771DB3BC /* Utility */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9E0CDC21002E4DAB0FB75823B41125AA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E06C41F880F1A90FF19541D5F97BBCE /* Info.plist */,
+				4E7229A93E579FCCC3407359055D8183 /* SignalProtocol-ObjC.modulemap */,
+				77C12D1DDEC2EF8C41210DF7D031B5BA /* SignalProtocol-ObjC.xcconfig */,
+				743DB4B38D8EBD406D8B04247F9DA55D /* SignalProtocol-ObjC-dummy.m */,
+				7DD6A460AC99EE916EA6FF1599D4215C /* SignalProtocol-ObjC-prefix.pch */,
+				A61B659766A48ADD6FA093DCC29E5389 /* SignalProtocol-ObjC-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Testing/Pods/Target Support Files/SignalProtocol-ObjC";
+			sourceTree = "<group>";
+		};
+		BC856BB79B89C2A078FF03B5855F2AA1 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				24E69BDEEFF6079BBF29F575C385589C /* SignalIdentityKeyStore.h */,
+				05AA7489AB29F43740444321D3F4029D /* SignalPreKeyStore.h */,
+				7D4B7AB62C18830D23F9D879E8A879D5 /* SignalSenderKeyStore.h */,
+				0DFFF52A5DA02949364717CAC5629A3A /* SignalSessionStore.h */,
+				6FC90ECCF75E680FDC247B061D66BCD3 /* SignalSignedPreKeyStore.h */,
+				7D34F6ACDA2A2A0DA430476CFB40AC01 /* SignalStorage.h */,
+				9F9D2936051F244CC9F9B600044CA923 /* SignalStorage.m */,
+				FDB3DB6B8D1FDC4461A9E2A265DAC7C8 /* SignalStorage_Internal.h */,
+			);
+			name = Storage;
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		C3CE94816557B15B26609F9FC2BDE4DF /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				5543A137BACF5630C73005FA7DB8A2FC /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		E2A0CD412EA755CBD4FB088971F12856 /* Pods-SignalProtocolTests */ = {
+			isa = PBXGroup;
+			children = (
+				03439739307B064C4F64D34E50C63F09 /* Info.plist */,
+				9444881E238D596C84078CB392C7826E /* Pods-SignalProtocolTests.modulemap */,
+				1D8856006AAE1F26068CB56074B35DC6 /* Pods-SignalProtocolTests-acknowledgements.markdown */,
+				2FA72CDFF78FDC2A5D62517F57758BA1 /* Pods-SignalProtocolTests-acknowledgements.plist */,
+				D38FAABE4B876403EC497E68593BCF1A /* Pods-SignalProtocolTests-dummy.m */,
+				B1EBD507D13270B929FAB1F58026D4D9 /* Pods-SignalProtocolTests-frameworks.sh */,
+				2D73CD363338D0956664AD6943AE4850 /* Pods-SignalProtocolTests-resources.sh */,
+				E5ABF7254F3189A2B5EF7359E295412E /* Pods-SignalProtocolTests-umbrella.h */,
+				A7AAA9337E695FF820C1F2C4B4C126E8 /* Pods-SignalProtocolTests.debug.xcconfig */,
+				5A732F39F99CEBA00D1B71CC97A65EF0 /* Pods-SignalProtocolTests.release.xcconfig */,
+			);
+			name = "Pods-SignalProtocolTests";
+			path = "Target Support Files/Pods-SignalProtocolTests";
+			sourceTree = "<group>";
+		};
+		FC94B1C08532F8E6DCAE1C4D771DB3BC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				FFEDCED44E1B4A8E90349E3D123F0FC6 /* SignalError.h */,
+				6F77C8268E523956911D40FD878A760B /* SignalError.m */,
+			);
+			name = Utility;
+			path = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		293D91005EC7BFAA975510C590D47DA1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD2C1D9F26DFFEB40BD880A6D9DE145F /* SignalAddress.h in Headers */,
+				4160C4101449DA0FA23E886574988127 /* SignalAddress_Internal.h in Headers */,
+				C4C362C1B87CAFD3F46314F2885A1FF2 /* SignalCiphertext.h in Headers */,
+				EE5F6270C3B8881A15A0538F19A18079 /* SignalCommonCryptoProvider.h in Headers */,
+				F3AA86468923CAA7E95A8C98618F3D71 /* SignalContext.h in Headers */,
+				949C608EFC7AB41819A3AC9E73B1B49D /* SignalContext_Internal.h in Headers */,
+				FE72C3AE1EAE1170C987E2E45C8ADE3A /* SignalError.h in Headers */,
+				4C95C11B3E62E75A3CD274375F4E6B51 /* SignalIdentityKeyPair.h in Headers */,
+				832FCAC455B2708606849FFDD9CAA74A /* SignalIdentityKeyPair_Internal.h in Headers */,
+				9B442E9AB5681A3B48B9EE2490868154 /* SignalIdentityKeyStore.h in Headers */,
+				E194EFFD46EC0406A94C57FA81808DBA /* SignalKeyHelper.h in Headers */,
+				2DE2464ABDF0974AE12217BE729D737B /* SignalKeyHelper_Internal.h in Headers */,
+				5E0D82B5133FDB5B00AF6F93FC5C800B /* SignalKeyPair.h in Headers */,
+				35832AC127B835520F2C07BA12F80893 /* SignalKeyPair_Internal.h in Headers */,
+				72F0F8814E9492518AA1AC973FE26A1E /* SignalMessage.h in Headers */,
+				1696A37E7637ABF23813F692C63DAB5B /* SignalMessage_Internal.h in Headers */,
+				01C0224532AD512C0862D8F076103528 /* SignalPreKey.h in Headers */,
+				B5286FEB6457587816D7CA8D7288FB89 /* SignalPreKey_Internal.h in Headers */,
+				0EF870C425B530679DD88B04F310BDEA /* SignalPreKeyBundle.h in Headers */,
+				9CE8ADA5F78C7A22C6501EC2BD2F6E12 /* SignalPreKeyBundle_Internal.h in Headers */,
+				B4AB4F3304C58997FC4BB396EF6E53D3 /* SignalPreKeyMessage.h in Headers */,
+				FB9D7A5AB4A7B4940A738AD74328F8AF /* SignalPreKeyMessage_Internal.h in Headers */,
+				5C629770EB41C0C8CF5092EC64A2B400 /* SignalPreKeyStore.h in Headers */,
+				8F9E6E1DDA24C1DA3FCC712AE6405487 /* SignalProtocol-ObjC-umbrella.h in Headers */,
+				3F9DBE9D33409E92A66C0E82CDEF6C80 /* SignalSenderKeyStore.h in Headers */,
+				EF99CE2EB0CEA4ED9D02ECDD2191A8CC /* SignalSerializable.h in Headers */,
+				C92D8E4E73BECB4622209DA61D2296F0 /* SignalSessionBuilder.h in Headers */,
+				7A92F8732503037E685B648B185767AB /* SignalSessionCipher.h in Headers */,
+				894FB9CC3232A3BFB1403F41F4129A94 /* SignalSessionStore.h in Headers */,
+				201CFB25E61A29DF9BEB045CD55E1753 /* SignalSignedPreKey.h in Headers */,
+				51CE573D1BA4E236720FDEBEE1AC6A6A /* SignalSignedPreKey_Internal.h in Headers */,
+				5B51D6128AECCE4F55E8AE29DD49E33B /* SignalSignedPreKeyStore.h in Headers */,
+				E0017096BB4F4F8B2981594D68F7B748 /* SignalStorage.h in Headers */,
+				71A795C973B434BF0F84F5F5972FBAF2 /* SignalStorage_Internal.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A7634BD70DF8CF45657F4D8FDF782B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39747BB2FFA3430AAF49A5FA655C7C44 /* base.h in Headers */,
+				E45FD2DEA73157807B6D90967C50A072 /* base2.h in Headers */,
+				83667D7C1279AB7D268B316004AECDE5 /* compare.h in Headers */,
+				7C7A8A1DF57F3894D3BC8FE27EF1069C /* crypto_hash_sha512.h in Headers */,
+				9E89F22851CCF5820D38E33B8EC3A9BA /* crypto_int32.h in Headers */,
+				ED4248DAE03026B2C453709F61EA0155 /* crypto_int64.h in Headers */,
+				3776612AF22EDEDBDBCE712D7F3083AC /* crypto_sign.h in Headers */,
+				1262A58869FC469BB0E8E75546D83B00 /* crypto_sign_edwards25519sha512batch.h in Headers */,
+				86AF852F4CD42187913B2505BFBED99E /* crypto_uint32.h in Headers */,
+				C8E3090E1AE692BCD2F97A862FB66487 /* crypto_uint64.h in Headers */,
+				82517EF419C0EF64789E06ADCB06913B /* crypto_verify_32.h in Headers */,
+				2162AA7502F546FA0AEB4A194274C42A /* curve.h in Headers */,
+				3617E391051543903EDF1B132260CEC4 /* curve25519-donna.h in Headers */,
+				F3E2CDA6B9BA515912B96EB5C4D1CC44 /* curve_sigs.h in Headers */,
+				E089D07F0CAB4D0206F1ACA14EF32552 /* d.h in Headers */,
+				44B824F2FAED5543D6169A6121BA50C2 /* d2.h in Headers */,
+				69916F4AA3778FCF0FC7D846021D824A /* fe.h in Headers */,
+				125156216A4D3F3125BCD5BA03476838 /* fingerprint.h in Headers */,
+				64802C6FADA3B83ECA25507E19DEC4CE /* FingerprintProtocol.pb-c.h in Headers */,
+				71348197D10EE13B25A0D92F2096C307 /* ge.h in Headers */,
+				FE1B805A6963DE73062F78F447900D16 /* ge_add.h in Headers */,
+				8C52DBEC316F90D21096F75FCABF7D2F /* ge_madd.h in Headers */,
+				19140DD986667B3D8EC7FD34B822DF38 /* ge_msub.h in Headers */,
+				C0896CD75D6931DA8E6C4468637F5D82 /* ge_p2_dbl.h in Headers */,
+				E40F812FDC8D2C1F9D6890A97B70A7B6 /* ge_sub.h in Headers */,
+				18765711C43E1D0375C2D90278163910 /* group_cipher.h in Headers */,
+				087CBB3D36751A2012996F3C0A9B8A5B /* group_session_builder.h in Headers */,
+				458B25677B075D91EE2C9EB11C859080 /* hkdf.h in Headers */,
+				0E8698AC7CE9E37E204FC584A5836A3D /* key_helper.h in Headers */,
+				75530F9806FF1AD14108A4531067EC35 /* LocalStorageProtocol.pb-c.h in Headers */,
+				A4C08FFB1E4C5F1AC7FC39B1EE371703 /* pow22523.h in Headers */,
+				4528B8D52BFE5022901C2326FEA010BC /* pow225521.h in Headers */,
+				9FB44AB1CA7F5DFE78DBE26F79BB8223 /* protobuf-c.h in Headers */,
+				EF97739D8F7575285A2E3FBDD8E42964 /* protocol.h in Headers */,
+				AD893AABD46A9AAFE86E9FECEF596F45 /* ratchet.h in Headers */,
+				C833EF7BDDAF6FB345FBF07A939C7437 /* sc.h in Headers */,
+				A8B8511B4805E3D5B3CC6FEC07124AED /* sender_key.h in Headers */,
+				98106FB908232C3BBE67245178EAEDA7 /* sender_key_record.h in Headers */,
+				456964E18527EC9757D95740C5E3D562 /* sender_key_state.h in Headers */,
+				20C341A2BB1678E8DB7C43632997CAD0 /* session_builder.h in Headers */,
+				3274394FED3C41CC66CF84533B01FEB6 /* session_builder_internal.h in Headers */,
+				567A2EEBACB801B225FFBC4EA7F4E710 /* session_cipher.h in Headers */,
+				6E07526B990C8D982A27E324EBF4C03C /* session_pre_key.h in Headers */,
+				B675BD3FD9A8EFCEAC8D1359C4A6CC60 /* session_record.h in Headers */,
+				C9217212ADB385F8F141574174F694B5 /* session_state.h in Headers */,
+				AF80315BF1EF5D9C65FC73992679915B /* signal_protocol.h in Headers */,
+				3D15CD4E4504B55E7702671E6ED4F5D6 /* signal_protocol_internal.h in Headers */,
+				ABBB23A99647DDC73E1AC737BE50AB09 /* signal_protocol_types.h in Headers */,
+				37F35B9C5D2795E4A1480FAFEEA1B8DA /* SignalProtocolC-umbrella.h in Headers */,
+				A7E0E2140334EDC7DEF7C45E78E521BA /* sqrtm1.h in Headers */,
+				F3C5308C5B7AF4B9544A5F3F14E37258 /* utarray.h in Headers */,
+				49D9AD19755CC7853071EF916374C326 /* uthash.h in Headers */,
+				27D0C3D27C89732DD7A1F3AFC602542E /* utlist.h in Headers */,
+				A4432DF3AEB4942DA1CA156B355C9A63 /* utstring.h in Headers */,
+				CF8462DBF878BE4FC5D4C52E7FEB5057 /* vpool.h in Headers */,
+				D51FAC4A4BA33FC5366B57FE512C7DDB /* WhisperTextProtocol.pb-c.h in Headers */,
+				28A76F64F9EFF81E9A71364029BC681C /* zeroize.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		393B4C11E01EAC307C289F80331C0293 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F5035AFA3E39AB90B9132986F90760 /* Pods-SignalProtocolTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0051DCDFAB2AD278BA3C3E7586F92E6D /* SignalProtocolC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C324192E4329D3816D4D61F795D6C18D /* Build configuration list for PBXNativeTarget "SignalProtocolC" */;
+			buildPhases = (
+				B1718B8C84095F08CD12117CA7F92804 /* Sources */,
+				E032CDDA49213A844AC42883807EF8FF /* Frameworks */,
+				2A7634BD70DF8CF45657F4D8FDF782B3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SignalProtocolC;
+			productName = SignalProtocolC;
+			productReference = BC9DDF714F683659ED75069FE20E639E /* SignalProtocolC.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		19420FCC55CC0DF9BFE6FD3D95014906 /* Pods-SignalProtocolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E86A62C51A66DBFB8C428D259896F989 /* Build configuration list for PBXNativeTarget "Pods-SignalProtocolTests" */;
+			buildPhases = (
+				B2E8DDCD1EC80A209FC4CC03AE8E405F /* Sources */,
+				945D409EA34093254A5C73BE4A10F9D8 /* Frameworks */,
+				393B4C11E01EAC307C289F80331C0293 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				865C62746F0CA8EDA2DBED3D11FDCF55 /* PBXTargetDependency */,
+				5A8523233DA824370DF13911A65E659D /* PBXTargetDependency */,
+			);
+			name = "Pods-SignalProtocolTests";
+			productName = "Pods-SignalProtocolTests";
+			productReference = 049703333012273DC71244379D7CBB20 /* Pods_SignalProtocolTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3A3AE5AB1E60D763741B78E47B130EA5 /* SignalProtocol-ObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DFC5828A681FE659990CAFDE69A43B5 /* Build configuration list for PBXNativeTarget "SignalProtocol-ObjC" */;
+			buildPhases = (
+				1D6C4DC3677CE763884F52BF4F45CCC9 /* Sources */,
+				2298723785909B39CC7EFBAFDB42717F /* Frameworks */,
+				293D91005EC7BFAA975510C590D47DA1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B137B5CBA44444D671CF1464C73523A /* PBXTargetDependency */,
+			);
+			name = "SignalProtocol-ObjC";
+			productName = "SignalProtocol-ObjC";
+			productReference = B3C0C7FE7C940935B6879ECA8C1DCCF0 /* SignalProtocolObjC.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6928EDB1C4681B3888E6E59096CE56D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19420FCC55CC0DF9BFE6FD3D95014906 /* Pods-SignalProtocolTests */,
+				3A3AE5AB1E60D763741B78E47B130EA5 /* SignalProtocol-ObjC */,
+				0051DCDFAB2AD278BA3C3E7586F92E6D /* SignalProtocolC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D6C4DC3677CE763884F52BF4F45CCC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				107BFFF999672F2165F8983583C58358 /* SignalAddress.m in Sources */,
+				0BDB36275D703B6A6330113258B270F9 /* SignalCiphertext.m in Sources */,
+				30F0A8596EDDA9952B0C62FACDA45F7F /* SignalCommonCryptoProvider.m in Sources */,
+				7A3964B1952C1A08CCCDF7DFE5A0C63A /* SignalContext.m in Sources */,
+				1A8F8868C534A3C0BF267FDB4851AF10 /* SignalError.m in Sources */,
+				9F4B3F2CCAA5B63271076DDC0D214392 /* SignalIdentityKeyPair.m in Sources */,
+				54DD0F1069EEE9652D37A3934F8D0675 /* SignalKeyHelper.m in Sources */,
+				A92C519CBCDB7B2726DFD26A5E17AA8C /* SignalKeyPair.m in Sources */,
+				EE450B433F3981A489F84C4BC326A1F8 /* SignalMessage.m in Sources */,
+				571CABD2B21D26416EEE254C9889C80A /* SignalPreKey.m in Sources */,
+				0274D86F8B960EC2D0ACE372EC700D60 /* SignalPreKeyBundle.m in Sources */,
+				119FE48BE2FE9C1110CA4F94369FC0CC /* SignalPreKeyMessage.m in Sources */,
+				D5DABA846093E17C32BA2F96863320F1 /* SignalProtocol-ObjC-dummy.m in Sources */,
+				83A5806E01194C4AD7C394D2B767B31E /* SignalSessionBuilder.m in Sources */,
+				07DEB2A1189F71547D725C019C304299 /* SignalSessionCipher.m in Sources */,
+				11140774DBD3F9733F7762ACA8D9625D /* SignalSignedPreKey.m in Sources */,
+				FCE41AC42A75D4B4FDE4A5B2F288D003 /* SignalStorage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1718B8C84095F08CD12117CA7F92804 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A05C807D9A0946CAB91CB891A028FD2 /* blocks.c in Sources */,
+				DC14959C8077052CDA85B41818CA5F5C /* compare.c in Sources */,
+				5B3975903910334E2D115F7C3321B606 /* curve.c in Sources */,
+				80A8222D16423B2A28D70C7E35927602 /* curve25519-donna.c in Sources */,
+				43B7CB4FA121AF32C5A281A332575D4E /* curve_sigs.c in Sources */,
+				AB2AF7C012C735629A8A81F3D41002D6 /* fe_0.c in Sources */,
+				ED5D675AAB632B7FBD36F689A476C379 /* fe_1.c in Sources */,
+				864870C79BC2096FF93BD1FD78D1DD36 /* fe_add.c in Sources */,
+				FC3912E97EB0272385E983B10E5638AC /* fe_cmov.c in Sources */,
+				4C4692C090A2F4CBB1171B2B58022724 /* fe_copy.c in Sources */,
+				FCC724154C151F4E6E2A485417EFCAF3 /* fe_frombytes.c in Sources */,
+				BB97FB0D04475B6AA28AA88C44B3D3FE /* fe_invert.c in Sources */,
+				98EF22D7E9EA4BEE7669F0EB79F1C349 /* fe_isnegative.c in Sources */,
+				8E0BFFB713AF847A433D32E0A1E38AA6 /* fe_isnonzero.c in Sources */,
+				8BC7335DF4EE623F2A175B04DF1CB673 /* fe_mul.c in Sources */,
+				02CDCC4E91BD50F1CB24CAC3CE2FDD49 /* fe_neg.c in Sources */,
+				28FCDAFD8F86BC06F57B60F2442F46BA /* fe_pow22523.c in Sources */,
+				2F2047B0AB7CF79CD6903DB1693FB7C9 /* fe_sq.c in Sources */,
+				B672F8C23A7C49E2B9C47731C0E02DDA /* fe_sq2.c in Sources */,
+				37A1F08069C79F7A8F436DC37BF13F76 /* fe_sub.c in Sources */,
+				A7AE8ED3C667834242A71C4E77A4BC65 /* fe_tobytes.c in Sources */,
+				AD3CEB902BC87692D1AE97C942E60CD3 /* fingerprint.c in Sources */,
+				3AC878C069BFEF9322C1E334CFA2A710 /* FingerprintProtocol.pb-c.c in Sources */,
+				7488F307CBB8CD01055D04C692A5A2A1 /* ge_add.c in Sources */,
+				10FE2A82C49FB85B1DD057E6E6CAB956 /* ge_double_scalarmult.c in Sources */,
+				395E4F3202F0A0ED6F4752C44D9EF3CC /* ge_frombytes.c in Sources */,
+				D695F6577FBB67A90C0F54F0FC4211AF /* ge_madd.c in Sources */,
+				1E191ECD24B2EF1EF9D33B3E5C6FCCEF /* ge_msub.c in Sources */,
+				D5875C1FF2AA9F64A865593855426C1D /* ge_p1p1_to_p2.c in Sources */,
+				56CDAA9D01D40A344F2FF6DE64E6A27B /* ge_p1p1_to_p3.c in Sources */,
+				635EDF8A7B43F5E03C1495905486992A /* ge_p2_0.c in Sources */,
+				ED195C0447A32D39FAA6DD32D1B5FD85 /* ge_p2_dbl.c in Sources */,
+				35BDF180EBC8BC121F7D46FDA60543D0 /* ge_p3_0.c in Sources */,
+				29312800CBD7D967D7F54B08A8FE5D7D /* ge_p3_dbl.c in Sources */,
+				34D2CD3AD30E2A8A767D13D74D920B2E /* ge_p3_to_cached.c in Sources */,
+				5EA9BFDBB4A7E04E05429A00DEA174AA /* ge_p3_to_p2.c in Sources */,
+				4D42E0C44AECF791752278990E527BC6 /* ge_p3_tobytes.c in Sources */,
+				B9E59F840673C0822749D22824FD2013 /* ge_precomp_0.c in Sources */,
+				9D8D5F2EF3D15303619B3F621D225451 /* ge_scalarmult_base.c in Sources */,
+				CF88F2B64CEA89F7DA0586E9D4EE9097 /* ge_sub.c in Sources */,
+				4E0553FB9D863D5E85BE7845D9ECB8B3 /* ge_tobytes.c in Sources */,
+				9119DBDC3A99A930EF7CAF4E7D9B4C86 /* group_cipher.c in Sources */,
+				93C0B32A4509D8685EA15E8A50F99F13 /* group_session_builder.c in Sources */,
+				4A1EE7CC83A3EF36B75AF9CDAA336904 /* hash.c in Sources */,
+				8107DF7983A4080F3F24BBB7E4D8F865 /* hkdf.c in Sources */,
+				F48DCC3BC946B121FB8CF6E7688593D2 /* key_helper.c in Sources */,
+				D514B0461E96D853E6EBBAFCA4282BCC /* LocalStorageProtocol.pb-c.c in Sources */,
+				4BD6794F5805DFF4AD01E474B325A865 /* open.c in Sources */,
+				F4C19D506A15A0614CE75E98D8D94530 /* protobuf-c.c in Sources */,
+				35C991F30E7EEFA7B57F7065C17803FA /* protocol.c in Sources */,
+				DC0C3F9C507D703D25213796238E86BD /* ratchet.c in Sources */,
+				45410374FD10D96944E96C811833B102 /* sc_muladd.c in Sources */,
+				3E947E3A85C44DEF1631393907989FFC /* sc_reduce.c in Sources */,
+				E6218B54CB5BA2DB1820AC4D3AE68A1F /* sender_key.c in Sources */,
+				1E85FBEE64423E210D73B740C067B788 /* sender_key_record.c in Sources */,
+				F1A6000AB39A678D930ED1C81A61016B /* sender_key_state.c in Sources */,
+				07A16B0B96A39B137C801FA72C735B84 /* session_builder.c in Sources */,
+				6EC4F7B193A952A3ED3176BACA97E7C7 /* session_cipher.c in Sources */,
+				230CB314A704210846279BF995CC9291 /* session_pre_key.c in Sources */,
+				4EAA47238F7C4F332C2593CA96C8A0B1 /* session_record.c in Sources */,
+				2966896865AFCE6C2AEC7146FB112F43 /* session_state.c in Sources */,
+				CC1746D22AD6159BFC95DB5802A11505 /* sign.c in Sources */,
+				B9EB2CB41D6449D554DF5091650BC2C0 /* sign_modified.c in Sources */,
+				22AF20F8E3409F197A68A4F412161FD0 /* signal_protocol.c in Sources */,
+				059512A459344B4D31BA622D617CA4DC /* SignalProtocolC-dummy.m in Sources */,
+				C53E4F791C1CB97D7F61DF7FD2E21B8B /* vpool.c in Sources */,
+				68A62AA2AF7FA6848FBA01B5B32DC877 /* WhisperTextProtocol.pb-c.c in Sources */,
+				012CBFCB4825F4E0CAF6447A6711C4E6 /* zeroize.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2E8DDCD1EC80A209FC4CC03AE8E405F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58919AC219767EDC7FA1DCEB8E149EE2 /* Pods-SignalProtocolTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B137B5CBA44444D671CF1464C73523A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SignalProtocolC;
+			target = 0051DCDFAB2AD278BA3C3E7586F92E6D /* SignalProtocolC */;
+			targetProxy = 4D1DB9AA6F744293067F5857742A1487 /* PBXContainerItemProxy */;
+		};
+		5A8523233DA824370DF13911A65E659D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SignalProtocolC;
+			target = 0051DCDFAB2AD278BA3C3E7586F92E6D /* SignalProtocolC */;
+			targetProxy = 8443EB259807DA3ABE116F93D3D10C86 /* PBXContainerItemProxy */;
+		};
+		865C62746F0CA8EDA2DBED3D11FDCF55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SignalProtocol-ObjC";
+			target = 3A3AE5AB1E60D763741B78E47B130EA5 /* SignalProtocol-ObjC */;
+			targetProxy = 2728D247DD8D0170865F971C0B0610CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5D622BA00757EC20ADAD24C580904C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB74B5E09B30AE94F1D9671501EA01E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C06A1FC5A5377925C314C0FBEB431A92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A732F39F99CEBA00D1B71CC97A65EF0 /* Pods-SignalProtocolTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SignalProtocolTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-SignalProtocolTests/Pods-SignalProtocolTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SignalProtocolTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF944AC78F865F79584AE5AF5ADF6D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77C12D1DDEC2EF8C41210DF7D031B5BA /* SignalProtocol-ObjC.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SignalProtocol-ObjC/SignalProtocol-ObjC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SignalProtocol-ObjC/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/SignalProtocol-ObjC/SignalProtocol-ObjC.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SignalProtocolObjC;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D45F6A8A4E095A7C094172C7275BDF26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7AAA9337E695FF820C1F2C4B4C126E8 /* Pods-SignalProtocolTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SignalProtocolTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-SignalProtocolTests/Pods-SignalProtocolTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SignalProtocolTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E269FC6D863D3E1B4BC7A817332944AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58945EED3C8A47B4B3748E4BE6AB5545 /* SignalProtocolC.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SignalProtocolC/SignalProtocolC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SignalProtocolC/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/SignalProtocolC/SignalProtocolC.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SignalProtocolC;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F3DD9397F8068DE8D617DC04A5800B58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58945EED3C8A47B4B3748E4BE6AB5545 /* SignalProtocolC.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SignalProtocolC/SignalProtocolC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SignalProtocolC/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/SignalProtocolC/SignalProtocolC.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SignalProtocolC;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F69EB7A9B6527079FC52CF7F01501926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77C12D1DDEC2EF8C41210DF7D031B5BA /* SignalProtocol-ObjC.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SignalProtocol-ObjC/SignalProtocol-ObjC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SignalProtocol-ObjC/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/SignalProtocol-ObjC/SignalProtocol-ObjC.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SignalProtocolObjC;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB74B5E09B30AE94F1D9671501EA01E8 /* Debug */,
+				5D622BA00757EC20ADAD24C580904C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DFC5828A681FE659990CAFDE69A43B5 /* Build configuration list for PBXNativeTarget "SignalProtocol-ObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF944AC78F865F79584AE5AF5ADF6D5D /* Debug */,
+				F69EB7A9B6527079FC52CF7F01501926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C324192E4329D3816D4D61F795D6C18D /* Build configuration list for PBXNativeTarget "SignalProtocolC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E269FC6D863D3E1B4BC7A817332944AF /* Debug */,
+				F3DD9397F8068DE8D617DC04A5800B58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E86A62C51A66DBFB8C428D259896F989 /* Build configuration list for PBXNativeTarget "Pods-SignalProtocolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D45F6A8A4E095A7C094172C7275BDF26 /* Debug */,
+				C06A1FC5A5377925C314C0FBEB431A92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

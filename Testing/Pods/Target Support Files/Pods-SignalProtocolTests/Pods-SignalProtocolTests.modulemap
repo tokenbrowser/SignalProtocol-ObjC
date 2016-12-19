@@ -1,0 +1,6 @@
+framework module Pods_SignalProtocolTests {
+  umbrella header "Pods-SignalProtocolTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

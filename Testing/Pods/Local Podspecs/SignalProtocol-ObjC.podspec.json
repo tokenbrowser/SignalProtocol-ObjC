@@ -1,0 +1,38 @@
+{
+  "name": "SignalProtocol-ObjC",
+  "version": "0.1.0",
+  "summary": "Unofficial Objective-C wrapper for libsignal-protocol-c",
+  "module_name": "SignalProtocolObjC",
+  "description": "Unofficial Objective-C wrapper for libsignal-protocol-c",
+  "homepage": "https://github.com/ChatSecure/SignalProtocol-ObjC.swift",
+  "license": {
+    "type": "GPLv3",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Chris Ballinger": "chris@chatsecure.org"
+  },
+  "social_media_url": "https://twitter.com/chatsecure/",
+  "source": {
+    "git": "https://github.com/ChatSecure/SignalProtocol-ObjC.git",
+    "tag": "0.1.0"
+  },
+  "source_files": [
+    "Classes/**/*.{h,m}"
+  ],
+  "private_header_files": [
+    "Classes/**/*_Internal.h",
+    "Classes/Models/SignalMessage.h"
+  ],
+  "dependencies": {
+    "SignalProtocolC": [
+      "~> 0.1.0"
+    ]
+  },
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
+}
