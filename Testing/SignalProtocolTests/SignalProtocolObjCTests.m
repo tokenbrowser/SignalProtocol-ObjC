@@ -52,9 +52,20 @@
     SignalPreKey *preKey1 = [preKeys firstObject];
     [inMemoryStore storePreKey:preKey1.serializedData preKeyId:preKey1.preKeyId];
     [inMemoryStore storeSignedPreKey:signedPreKey.serializedData signedPreKeyId:signedPreKey.preKeyId];
+
+    NSData *preKeyPublic = [[NSData alloc] initWithBase64EncodedString:[preKey1.keyPair.publicKey base64EncodedStringWithOptions:0] options:0];
+    NSData *signedpPreKeyPublic = [[NSData alloc] initWithBase64EncodedString:[signedPreKey.keyPair.publicKey base64EncodedStringWithOptions:0] options:0];
+    NSData *signature = [[NSData alloc] initWithBase64EncodedString:[signedPreKey.signature base64EncodedStringWithOptions:0] options:0];
     
-    SignalPreKeyBundle *alicePreKeyBundle = [[SignalPreKeyBundle alloc] initWithRegistrationId:localRegistrationId deviceId:aliceAddress.deviceId preKeyId:preKey1.preKeyId preKeyPublic:preKey1.keyPair.publicKey signedPreKeyId:signedPreKey.preKeyId signedPreKeyPublic:signedPreKey.keyPair.publicKey signature:signedPreKey.signature identityKey:identityKeyPair.publicKey];
-    
+    SignalPreKeyBundle *alicePreKeyBundle = [[SignalPreKeyBundle alloc] initWithRegistrationId:localRegistrationId
+                                                                                      deviceId:aliceAddress.deviceId
+                                                                                      preKeyId:preKey1.preKeyId
+                                                                                  preKeyPublic:preKeyPublic
+                                                                                signedPreKeyId:signedPreKey.preKeyId
+                                                                            signedPreKeyPublic:signedpPreKeyPublic
+                                                                                     signature:signature
+                                                                                   identityKey:identityKeyPair.publicKey];
+
     SignalStoreInMemoryStorage *bobInMemoryStore = [[SignalStoreInMemoryStorage alloc] init];
     SignalStorage *bobStorage = [[SignalStorage alloc] initWithSignalStore:inMemoryStore];
     SignalContext *bobContext = [[SignalContext alloc] initWithStorage:bobStorage];
@@ -63,20 +74,21 @@
     uint32_t bobLocalRegistrationId = [bobKeyHelper generateRegistrationId];
     bobInMemoryStore.identityKeyPair = bobIdentityKeyPair;
     bobInMemoryStore.localRegistrationId = bobLocalRegistrationId;
-    NSArray<SignalPreKey*>*bobPreKeys = [bobKeyHelper generatePreKeysWithStartingPreKeyId:0 count:100];
-    SignalPreKey *bobLastResortPreKey = [bobKeyHelper generateLastResortPreKey];
-    XCTAssertNotNil(bobLastResortPreKey);
-    SignalSignedPreKey *bobSignedPreKey = [bobKeyHelper generateSignedPreKeyWithIdentity:identityKeyPair signedPreKeyId:0];
-    
-    SignalPreKey *bobPreKey1 = [bobPreKeys firstObject];
-    SignalPreKeyBundle *bobPreKeyBundle = [[SignalPreKeyBundle alloc] initWithRegistrationId:bobLocalRegistrationId deviceId:bobAddress.deviceId preKeyId:bobPreKey1.preKeyId preKeyPublic:bobPreKey1.keyPair.publicKey signedPreKeyId:bobSignedPreKey.preKeyId signedPreKeyPublic:bobSignedPreKey.keyPair.publicKey signature:bobSignedPreKey.signature identityKey:bobIdentityKeyPair.publicKey];
-    XCTAssertNotNil(bobPreKeyBundle);
-    
+
+//    NSArray<SignalPreKey*>*bobPreKeys = [bobKeyHelper generatePreKeysWithStartingPreKeyId:0 count:100];
+//    SignalPreKey *bobLastResortPreKey = [bobKeyHelper generateLastResortPreKey];
+//    XCTAssertNotNil(bobLastResortPreKey);
+//    SignalSignedPreKey *bobSignedPreKey = [bobKeyHelper generateSignedPreKeyWithIdentity:identityKeyPair signedPreKeyId:0];
+
+//    SignalPreKey *bobPreKey1 = [bobPreKeys firstObject];
+//    SignalPreKeyBundle *bobPreKeyBundle = [[SignalPreKeyBundle alloc] initWithRegistrationId:bobLocalRegistrationId deviceId:bobAddress.deviceId preKeyId:bobPreKey1.preKeyId preKeyPublic:bobPreKey1.keyPair.publicKey signedPreKeyId:bobSignedPreKey.preKeyId signedPreKeyPublic:bobSignedPreKey.keyPair.publicKey signature:bobSignedPreKey.signature identityKey:bobIdentityKeyPair.publicKey];
+//    XCTAssertNotNil(bobPreKeyBundle);
+
     SignalSessionBuilder *bobSessionBuilder = [[SignalSessionBuilder alloc] initWithAddress:aliceAddress context:bobContext];
     [bobSessionBuilder processPreKeyBundle:alicePreKeyBundle];
     SignalSessionCipher *bobSessionCipher = [[SignalSessionCipher alloc] initWithAddress:aliceAddress context:bobContext];
-    
-    NSString *bobMessage = @"Hey it's Bob";
+
+    NSString *bobMessage = @"Hey it's Bob 🙄!";
     NSData *bobMessageData = [bobMessage dataUsingEncoding:NSUTF8StringEncoding];
     NSError *error = nil;
     SignalCiphertext *bobOut = [bobSessionCipher encryptData:bobMessageData error:&error];
